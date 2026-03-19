@@ -131,7 +131,13 @@ for(let i=0;i<50;i++){
     grid.push(Array(50).fill(0));
 }
 const add = function(r,c,h){
-    grid[r-1][c-1]=Math.max(h,grid[r-1][c-1]);
+    if(typeof(r) == "number")r = [r];
+    if(typeof(c) == "number")c = [c];
+    r.forEach(ri=>{
+        c.forEach(ci=>{
+            grid[ri-1][ci-1]=Math.max(h,grid[ri-1][ci-1]);
+        })
+    })
 };
 add(18,39,3);
 add(23,4,3);

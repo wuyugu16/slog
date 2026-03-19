@@ -99,6 +99,7 @@ title: 网站
 [神奇海螺](https://lab.magiconch.com/)
 [锅巴游戏](http://www.communitree.g8hh.com/#/)
 [小说](https://www.luogu.com.cn/problem/T695337)
+[桌游合集](https://game.hullqin.cn/)
 ## OI之物
 [试炼场备份](https://www.luogu.me/paste/62wjg0ak)
 ## 单调队列者也
