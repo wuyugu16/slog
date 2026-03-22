@@ -1,10 +1,9 @@
 ---
 date: 2026-2-27
 category: passage
-hide: true
 ---
 
-# ai文章
+# ai文章（仅供娱乐！）
 
 ## 第一话 虬龙起金乌落，孽缘生鞭策立
 

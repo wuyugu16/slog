@@ -1,9 +1,11 @@
 ---
 date: 2026-2-27
 category: passage
-hide: true
 ---
-# 无意义表格
+# 谣言表
+
+叠加：以下内容均为谣言，某班级不存在任何的恋爱关系！
+
 <style>
 
     .rhead {

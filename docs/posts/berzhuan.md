@@ -1,7 +1,8 @@
 ---
 date: 2026-2-27
 category: passage
-hide: true
+tag:
+    - 转载
 ---
 
 # 班长转

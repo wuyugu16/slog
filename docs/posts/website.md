@@ -21,7 +21,9 @@ title: 网站
 [大数wiki](https://googology.fandom.com/zh/wiki)
 [生命游戏wiki](https://conwaylife.com/wiki/Main_Page)
 - 程
+[试炼场备份](https://www.luogu.me/paste/62wjg0ak)
 [骚气的代码](https://aem1k.com/)
+[ioccc](https://www.ioccc.org/years.html)
 [wenyan-lang](https://ide.wy-lang.org/)
 [gcc选项](https://gcc.gnu.org/onlinedocs/gcc/index.html)
 [manimce官网](https://www.manim.community/)
@@ -34,6 +36,7 @@ title: 网站
 [css弹性盒](https://flexboxfroggy.com/)
 [js小游戏](https://lab.reaal.me/jsrobot/#level=1&language=en)
 [图论](https://csacademy.com/app/graph_editor/)
+[learnXinYminutes](https://learnxinyminutes.com/)
 - 理
 [电路模拟](https://cc.xiaogd.net/)
 [电子工程师在线工具](https://tool.chipdebug.com/)
@@ -100,7 +103,5 @@ title: 网站
 [锅巴游戏](http://www.communitree.g8hh.com/#/)
 [小说](https://www.luogu.com.cn/problem/T695337)
 [桌游合集](https://game.hullqin.cn/)
-## OI之物
-[试炼场备份](https://www.luogu.me/paste/62wjg0ak)
 ## 单调队列者也
 [1](https://www.luogu.me/article/6cr49f6k)

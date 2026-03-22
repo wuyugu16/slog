@@ -88,7 +88,6 @@ export default defineUserConfig({
 				date: frontmatter.date || null,
 				category: frontmatter.category || "",
 				tag: frontmatter.tag || [],
-				hide: !!frontmatter.hide,
 			}),
 
 			// Generate excerpt for all pages excerpt those users choose to disable
@@ -97,10 +96,7 @@ export default defineUserConfig({
 			category: [
 				{
 					key: "category",
-					getter: page =>
-						page.frontmatter.hide
-							? []
-							: [page.frontmatter.category || ""],
+					getter: page => [page.frontmatter.category || ""],
 					layout: "Category",
 					itemLayout: "Category",
 					frontmatter: () => ({
@@ -113,8 +109,7 @@ export default defineUserConfig({
 				},
 				{
 					key: "tag",
-					getter: page =>
-						page.frontmatter.hide ? [] : page.frontmatter.tag || [],
+					getter: page => page.frontmatter.tag || [],
 					layout: "Tag",
 					itemLayout: "Tag",
 					frontmatter: () => ({
@@ -131,7 +126,7 @@ export default defineUserConfig({
 			type: [
 				{
 					key: "article",
-					filter: page => !page.frontmatter.hide,
+					filter: page => true,
 					layout: "Article",
 					frontmatter: () => ({
 						title: "Articles",
@@ -168,15 +163,6 @@ export default defineUserConfig({
 							new Date(pageA.frontmatter.date).getTime()
 						);
 					},
-				},
-				{
-					key: "hider",
-					filter: page => !!page.frontmatter.hide,
-					layout: "Hider",
-					frontmatter: () => ({
-						title: "Hiders",
-						sidebar: false,
-					}),
 				},
 			],
 			hotReload: true,

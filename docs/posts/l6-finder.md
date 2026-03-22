@@ -1,7 +1,6 @@
 ---
 date: 2026-2-28
 category: passage
-hide: true
 ---
 
 # 关键词检测 / jcjc
