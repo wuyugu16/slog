@@ -1,5 +1,5 @@
 ---
-data: 2026-2-28
+date: 2026-2-28
 category: note
 tag: 
  - 数学
@@ -15,7 +15,7 @@ tag:
 求证：$\left(\sum a_i^2\right)\left(\sum b_i^2\right)=\left(\sum a_ib_i\right)^2+\sum_{i<j}(a_ib_j-a_jb-i)^2$  
 证明：$RHS_1=\sum a_i^2b_i^2 + 2\sum_{i<j}a_ib_ia_jb_j$  
 $RHS_2=\sum_{i<j}(a_i^2b_j^2+a_j^2b_i^2-2a_ib_ia_jb_j)$  
-$RHS=\sum a_i^2b_i^2+\sum_{i<j}(a_i^2b_j^2+a^j^2b_i^2)=LHS$
+$RHS=\sum a_i^2b_i^2+\sum_{i<j}(a_i^2b_j^2+a_j^2b_i^2)=LHS$
 
 ### 1.4 二次函数
 定理：对于 $ax^2+bx+c=0$ 的根 $x_1,x_2$ 和 $\Delta$，有 $(x_1-x_2)^2=\frac{\Delta}{a^2}$

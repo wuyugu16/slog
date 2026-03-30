@@ -1,6 +1,6 @@
 ---
 date: 2026-2-28
-category: passage
+category: tool
 ---
 
 # 关键词检测 / jcjc
@@ -19,7 +19,7 @@ var ans = [];
 var key = [
     ["jc","swd","gb","lsq","cy","bk","sff","bc"],
     ["jc","gb","jxy","ls","ds","ltt","sff","zyt","zx",/**/"wzl","bk","bc","lzj","pd","ll"],
-    ["srq","wyh","gjy","zzh","tby","zrx","wzh","zjm","lsq","fsx","fbf","cyy","wyq","lts","rh","wjx","qhr","mzs","yxb","lz","hcx","syx","jzh","wxr","sws","dcw","wy","cby","jkr","lqy","zyf","zsj","axy","wym","cy","hym","syf","cbx","zxh","zjw","yac","zjy","djn","wwh","zjh","zsh","xxy","zwc","qxl","chr",/**/"yjk","lsx","xzq","zky","bsq"],
+    ["srq","wyh","gjy","zzh","tby","zrx","wzh","zjm","lsq","fsx","fbf","cyy","wyq","lts","rh","wjx","qhr","mzs","yxb","lz","hcx","syx","jzh","wxr","sws","dcw","wy","cby","jkr","lqy","zyf","zsj","axy","wym","cy","hym","syf","cbx","zxh","zjw","yac","zjy","djn","wwh","zjh","zsh","xxy","zwc","qxl","chr",/**/"yjk","lsx","xzq","zky","bsq","zxy","zzn"],
     ["jb","jy","sm"]
 ];
 function findAll(str, subStr) {

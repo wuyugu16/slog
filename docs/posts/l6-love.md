@@ -4,8 +4,6 @@ category: passage
 ---
 # 谣言表
 
-叠加：以下内容均为谣言，某班级不存在任何的恋爱关系！
-
 <style>
 
     .rhead {
@@ -114,7 +112,7 @@ category: passage
         <div v-for="(val, colIdx) in row" :key="colIdx" class="cell"
             :style="{ backgroundColor: getColor(val) }"
             :title="val?
-                `${(rowIdx+1+'').padStart(2,'0')}2${(colIdx+1+'').padStart(2,'0')}`
+                (getFact(Number(`${(rowIdx+1+'')}2${(colIdx+1+'').padStart(2,'0')}`)))
             :``">
         </div>
     </div>
@@ -132,9 +130,23 @@ var grid = [];
 for(let i=0;i<50;i++){
     grid.push(Array(50).fill(0));
 }
+function getFact(n) {
+    if (n <= 1) return `${n} = ${n}`;
+    let factors = [];
+    let temp = n;
+    for (let i = 2; i * i <= temp; i++) {
+        while (temp % i === 0) {
+            factors.push(i);
+            temp /= i;
+        }
+    }
+    if (temp > 1) factors.push(temp);
+    return `${n} = ${factors.join('*')}`;
+}
 const add = function(r,c,h){
     if(typeof(r) == "number")r = [r];
     if(typeof(c) == "number")c = [c];
+    console.log(r,c);
     r.forEach(ri=>{
         c.forEach(ci=>{
             grid[ri-1][ci-1]=Math.max(h,grid[ri-1][ci-1]);
@@ -195,17 +207,10 @@ add(39,17,1);
 add(47,18,1);
 add(9,21,1);
 add(21,9,1);
-[1,2,3,4,12,13,21,22,25,27,30,31,32,35,37,39,40,41,42,43,46,47,48]
-.forEach(item=>{
-    add(19,item,1)
-})
 
-var x = [18,34,23,19,45,29]
-x.forEach(i1=>{
-    x.forEach(i2=>{
-        add(i1,i2,2);
-    })
-})
+add(19,[1,2,3,4,12,13,21,22,25,27,30,31,32,35,37,39,40,41,42,43,46,47,48],1)
+
+add([18,34,23,19,45,29],[18,34,23,19,45,29],2);
 
 add(18,29,2);
 add(45,27,3);
@@ -221,23 +226,13 @@ add(19,10,2);
 add(19,45,3)
 //————18 & me
 
-add(23,28,1);
-add(23,45,2);
-add(23,19,2);
-add(23,18,2);
-add(23,15,2);
-add(23,34,2);
-add(23,29,2);
-add(23,31,2);
-
-add(29,28,2);
-add(29,28,2);
-add(29,28,2);
-add(29,28,2);
-add(29,28,2);
-add(29,28,2);
-add(29,28,2);
-add(29,28,2);
+add(23,[28,45,19,18,15,34,29,31],2);
+add(29,[39,30,28,44,18,15,36,45],2);
+add([23,18,15,7],[23,18,15,7],2);
+add(18,[39,23],3);
+add(24,42,1);
+add(34,[30,49],2);
+add([50,28,36,19,45],[50,28,36,19,45],2);
 
 const getColor = (value) => {
     switch (value) {

@@ -1,6 +1,6 @@
 ---
 date: 2022-01-03
-category: passgae
+category: passage
 ---
 
 # 小六人员名单
