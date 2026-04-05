@@ -1,6 +1,6 @@
 ---
-date: 2022-01-03
-category: passage
+date: 2026-01-03
+category: note
 ---
 
 # 小六人员名单

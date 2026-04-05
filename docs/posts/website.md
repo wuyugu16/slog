@@ -21,6 +21,7 @@ title: 网站
 [大数wiki](https://googology.fandom.com/zh/wiki)
 [生命游戏wiki](https://conwaylife.com/wiki/Main_Page)
 - 程
+[图灵机模拟](http://morphett.info/turing/turing.html)
 [试炼场备份](https://www.luogu.me/paste/62wjg0ak)
 [骚气的代码](https://aem1k.com/)
 [ioccc](https://www.ioccc.org/years.html)
@@ -52,6 +53,7 @@ title: 网站
 [bili视频下载](https://snapany.com/zh)
 ## 趣
 - 专
+[数独](https://sudokupad.app/)
 [狗屁不通文章生成](https://suulnnka.github.io/BullshitGenerator/index.html)
 [国际象棋](https://www.chess.com/zh)
 [名字竞技场](http://namerena.github.io/)

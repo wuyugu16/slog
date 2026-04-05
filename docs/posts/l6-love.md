@@ -1,6 +1,6 @@
 ---
 date: 2026-2-27
-category: passage
+category: note
 ---
 # 谣言表
 
@@ -85,50 +85,72 @@ category: passage
       gap: 6px;
     }
 
-    .legend-swatch {
+    .legend-item > span {
       width: 14px;
       height: 14px;
       border-radius: 4px;
       background-color: currentColor;
     }
-
-    .legend-swatch.level0 { background-color: #ebedf0; }
-    .legend-swatch.level1 { background-color: #9be9a8; }
-    .legend-swatch.level2 { background-color: #40c463; }
-    .legend-swatch.level3 { background-color: #30a14e; }
 </style>
 
 <div id="app">
     <div class="heatmap">
-    <div class="row">
-        <p style="margin-right:7px;"></p>
-        <span class="chead"
-            v-for="(val, colIdx) in Array.from({length:50})" 
-            v-html="(colIdx+1+'').padStart(2,'0')">
-        </span>
-    </div>
-    <div v-for="(row, rowIdx) in grid" :key="rowIdx" class="row">
-        <p class="rhead" v-html="(rowIdx+1+'').padStart(2,'0')"></p>
-        <div v-for="(val, colIdx) in row" :key="colIdx" class="cell"
-            :style="{ backgroundColor: getColor(val) }"
-            :title="val?
-                (getFact(Number(`${(rowIdx+1+'')}2${(colIdx+1+'').padStart(2,'0')}`)))
-            :``">
+        <div class="row">
+            <p style="margin-right:7px;"></p>
+            <span class="chead"
+                v-for="(val, colIdx) in Array.from({length:50})" 
+                v-html="(colIdx+1+'').padStart(2,'0')">
+            </span>
+        </div>
+        <div v-for="(row, rowIdx) in grid" :key="rowIdx" class="row">
+            <p class="rhead" v-html="(rowIdx+1+'').padStart(2,'0')"></p>
+            <div v-for="(val, colIdx) in row" :key="colIdx" class="cell"
+                :style="{ backgroundColor: getColor(val) }"
+                :title="`${(rowIdx+1+'').padStart(2,'0')}2${(colIdx+1+'').padStart(2,'0')} : `+fm[rowIdx][colIdx]">
+            </div>
         </div>
     </div>
+    <div class="legend">
+        <div class="legend-item"><span :style="{ backgroundColor: getColor(0) }"></span>毫无关系</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor(1) }"></span>硬扯</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor(2) }"></span>还有点道理</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor(3) }"></span>较为流行</div>
+    </div>
+    <hr/>
+    <div class="heatmap">
+        <div class="row">
+            <p style="margin-right:7px;"></p>
+            <span class="chead"
+                v-for="(val, colIdx) in Array.from({length:50})" 
+                v-html="(colIdx+1+'').padStart(2,'0')">
+            </span>
+        </div>
+        <div v-for="(row, rowIdx) in grid" :key="rowIdx" class="row">
+            <p class="rhead" v-html="(rowIdx+1+'').padStart(2,'0')"></p>
+            <div v-for="(val, colIdx) in row" :key="colIdx" class="cell"
+                :style="{ backgroundColor: getColor2(val?
+                    (getMax(Number(`${(rowIdx+1+'')}2${(colIdx+1+'').padStart(2,'0')}`)))
+                :0) }"
+                :title="val?
+                    (getFact(Number(`${(rowIdx+1+'')}2${(colIdx+1+'').padStart(2,'0')}`)))
+                :``">
+            </div>
+        </div>
     </div>
     <div class="legend">
-        <div class="legend-item"><span class="legend-swatch level0"></span>毫无关系</div>
-        <div class="legend-item"><span class="legend-swatch level1"></span>硬扯</div>
-        <div class="legend-item"><span class="legend-swatch level2"></span>还有点道理</div>
-        <div class="legend-item"><span class="legend-swatch level3"></span>较为流行</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor2(0) }"></span>毫无关系</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor2(1) }"></span>质数</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor2(2) }"></span>3,4</div>
+        <div class="legend-item"><span :style="{ backgroundColor: getColor2(3) }"></span>2</div>
     </div>
 </div>
 
 <script setup>
 var grid = [];
+var fm = [];
 for(let i=0;i<50;i++){
     grid.push(Array(50).fill(0));
+    fm.push(Array(50).fill(''));
 }
 function getFact(n) {
     if (n <= 1) return `${n} = ${n}`;
@@ -143,104 +165,124 @@ function getFact(n) {
     if (temp > 1) factors.push(temp);
     return `${n} = ${factors.join('*')}`;
 }
-const add = function(r,c,h){
+function getMax(n) {
+    let factors = [];
+    let temp = n;
+    for (let i = 2; i * i <= temp; i++) {
+        while (temp % i === 0) {
+            factors.push(i);
+            temp /= i;
+        }
+    }
+    if (temp > 1) factors.push(temp);
+    if(factors.length == 1)return 1;
+    return [3,3,3,2,2,1][String(factors[factors.length-1]).length];
+}
+const add = function(r,c,h,rs=""){
     if(typeof(r) == "number")r = [r];
     if(typeof(c) == "number")c = [c];
-    console.log(r,c);
     r.forEach(ri=>{
         c.forEach(ci=>{
             grid[ri-1][ci-1]=Math.max(h,grid[ri-1][ci-1]);
+            if(rs)
+                fm[ri-1][ci-1] += (fm[ri-1][ci-1]?',':'')+rs;
         })
     })
 };
-add(18,39,3);
-add(23,4,3);
+add(18,39,3,"23造的谣言");
+add(23,4,3,"万恶之源");
 add(19,42,3);
 add(34,30,3);
 add(39,29,3);
-add(6,48,3);
+add(6,48,3,"冲648");
 add(8,48,3);
 add(9,30,3);
-add(14,12,3);
+add(14,12,3,"星辰");
 add(20,33,3);
 add(29,30,3);
-//add(*2,*8,3);
-//add(*5,*9,3);
+add(12,28,3,"well,well,well");
+add(15,39,3,"by re");
 
-add(7,3,2);
-add(19,5,2);
-add(9,4,2);
+add(7,3,2,"远古谣言");
+add(19,5,2,"猎奇");
+add(9,4,2,"猎奇");
 add(16,11,2);
-add(14,19,2);
-add(19,14,2);
-add(17,41,2);
-add(19,27,2);
-add(19,25,2);
-add(19,21,2);
-add(28,50,2);
-add(19,22,2);
-add(45,27,3);
-add(45,21,2);
+add(14,19,2,"猎奇");
+add(19,14,2,"猎奇");
+add(17,41,2,"同桌");
+add(19,27,2,"同桌");
+add(19,25,2,"同桌 / 日月");
+add(19,21,2,"远古谣言");
 
 for(let i=1;i<=50;i++){
     add(i,i,3);
-    add(i,48,1);//08 2 48 = 0(nobody) 82 48
+    add(i,48,1,"08248 = 0(没人) 82 48");//08 2 48 = 0(nobody) 82 48
 }
-add(39,4,1);//yundonghui guangbo 392 417
-add(1,2,1);
-add(2,1,1);
-add(3,4,1);
-add(4,3,1);
-add(16,7,1);
-add(17,8,1);
-add(10,50,1);
-add(13,28,1);
-add(28,13,1);
-add(15,43,1);
-add(43,15,1);
-add(40,31,1);
+add(39,4,1,"运动会开幕式编号广播 392 417");//yundonghui guangbo 392 417
+add(1,2,1,"猎奇");
+add(2,1,1,"猎奇");
+add(3,4,1,"猎奇");
+add(4,3,1,"猎奇");
+add(16,7,1,"恶梗");
+add(17,8,1,"猎祁");
+add(10,50,1,"同桌");
+add(13,28,1,"同桌");
+add(28,13,1,"同桌");
+add(15,43,1,"同桌");
+add(43,15,1,"同桌");
+add(40,31,1,"40:小！芳！芳！");
+add(40,12,1,"40:乐！乐！");
 //cheng fa kou jue(?)
-add(37,11,1);
-add(46,14,1);
-add(38,14,1);
-add(39,17,1);
-add(47,18,1);
-add(9,21,1);
-add(21,9,1);
+add(37,11,1,"三七二十一");
+add(46,14,1,"四六二十四");
+add(38,14,1,"三八二十四");
+add(39,17,1,"三九二十七");
+add(47,18,1,"四七二十八");
+add(9,21,1,"同桌");
+add(21,9,1,"同桌");
 
-add(19,[1,2,3,4,12,13,21,22,25,27,30,31,32,35,37,39,40,41,42,43,46,47,48],1)
+add(19,[1,2,3,4,12,13,21,22,25,27,30,31,32,35,37,39,40,41,42,43,46,47,48],1,"19喜欢咱班所有女生")
 
 add([18,34,23,19,45,29],[18,34,23,19,45,29],2);
 
 add(18,29,2);
-add(45,27,3);
-add(19,22,2);
+add(45,27,3,"同桌");
+add(19,22,2,"同桌");
 
-add(19,16,1);
-add(19,29,2);
-add(18,29,2);
-add(18,34,2);
-add(23,18,2);
-add(16,18,1);
-add(19,10,2);
-add(19,45,3)
+add(19,16,1,"by 18");
+add(19,29,2,"by 18");
+add(18,29,2,"by 18");
+add(18,34,2,"by 18");
+add(23,18,2,"by 18");
+add(16,18,1,"by 18");
+add(19,10,2,"by 18");
+add(19,45,3,"by 18")
 //————18 & me
 
-add(23,[28,45,19,18,15,34,29,31],2);
-add(29,[39,30,28,44,18,15,36,45],2);
-add([23,18,15,7],[23,18,15,7],2);
-add(18,[39,23],3);
-add(24,42,1);
-add(34,[30,49],2);
-add([50,28,36,19,45],[50,28,36,19,45],2);
+add(23,[28,45,19,18,15,34,29,31],2,"by 18");
+add(29,[39,30,28,44,18,15,36,45],2,"by 18");
+add([23,18,15,7],[23,18,15,7],2,"by 18");
+add(18,[39,23],3,"by 18");
+add(24,42,1,"by 18");
+add(34,[30,49],2,"by 18");
+add([50,28,36,19,45],[50,28,36,19,45],2,"by 36");
 
 const getColor = (value) => {
     switch (value) {
         case 0: return '#ebedf0'; // 最浅
         case 1: return '#9be9a8'; // 浅绿
         case 2: return '#40c463'; // 中绿
-        case 3: return '#30a14e'; // 深绿
+        case 3: return '#20913e'; // 深绿
         default: return '#ebedf0';
+    }
+};
+const getColor2 = (value) => {
+    switch (value) {
+        case 0: return '#ebf0ed'; // 最浅
+        case 1: return '#abb8f9'; // 浅绿
+        case 2: return '#6083e4'; // 中绿
+        case 3: return '#304ea1'; // 深绿
+        default: return '#ebf0ed';
     }
 };
 </script>
