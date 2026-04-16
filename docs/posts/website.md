@@ -20,6 +20,7 @@ title: 网站
 [网络画板](https://www.netpad.net.cn/svg.html)
 [大数wiki](https://googology.fandom.com/zh/wiki)
 [生命游戏wiki](https://conwaylife.com/wiki/Main_Page)
+[三角形中心列表](https://faculty.evansville.edu/ck6/encyclopedia/ETC.html)
 - 程
 [图灵机模拟](http://morphett.info/turing/turing.html)
 [试炼场备份](https://www.luogu.me/paste/62wjg0ak)
@@ -38,6 +39,7 @@ title: 网站
 [js小游戏](https://lab.reaal.me/jsrobot/#level=1&language=en)
 [图论](https://csacademy.com/app/graph_editor/)
 [learnXinYminutes](https://learnxinyminutes.com/)
+[编程语言发展史](https://ccrma.stanford.edu/courses/250a-fall-2005/docs/ComputerLanguagesChart.png)
 - 理
 [电路模拟](https://cc.xiaogd.net/)
 [电子工程师在线工具](https://tool.chipdebug.com/)
@@ -93,6 +95,11 @@ title: 网站
 [膜拜Siyuan](https://lmoliver.github.io/mosiyuan/index.html)
 [代码打字](https://www.speedcoder.net/)
 [名字竞技场](https://deepmess.com/namerena/)
+[肚子的模拟器](https://joshuaurora.github.io/CCF/DZD_Simulator.html)
+[whk班主任模拟](https://paperzym.github.io/whk/)
+[OI重开模拟器](https://little09qwq.github.io/oi-remake-game/)
+[OI教练模拟器](https://seve42.github.io/OItrainer/start.html)
+[做干净的奥赛！](https://www.noi.cn/xw/2009-08-31/714736.shtml)
 - 杂
 [neal.fun](https://neal.fun/)
 [各种各样1](https://toms.toys/)
