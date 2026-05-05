@@ -31,6 +31,7 @@ title: 网站
 [manimce官网](https://www.manim.community/)
 [代码流程展示](https://pythontutor.com/)
 [汇编翻译器](https://godbolt.org/)
+[CppInsights](https://cppinsights.io/)
 [js_ast语法树生成](https://astexplorer.net/)
 [css选择器](https://flukeout.github.io/)
 [css网格](https://cssgridgarden.com/)
@@ -40,6 +41,7 @@ title: 网站
 [图论](https://csacademy.com/app/graph_editor/)
 [learnXinYminutes](https://learnxinyminutes.com/)
 [编程语言发展史](https://ccrma.stanford.edu/courses/250a-fall-2005/docs/ComputerLanguagesChart.png)
+[算法可视化](https://algorithmvisualization.top/)
 - 理
 [电路模拟](https://cc.xiaogd.net/)
 [电子工程师在线工具](https://tool.chipdebug.com/)
