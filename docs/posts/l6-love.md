@@ -1,6 +1,8 @@
 ---
 date: 2026-2-27
 category: note
+tag:
+    - 烂蒜
 ---
 # 谣言表
 

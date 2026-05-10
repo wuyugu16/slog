@@ -1,6 +1,8 @@
 ---
 date: 2026-01-03
 category: note
+tag:
+    - 烂蒜
 ---
 
 # 小六人员名单

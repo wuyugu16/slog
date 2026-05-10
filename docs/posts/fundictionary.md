@@ -1,6 +1,8 @@
 ---
 date: 2022-01-04
 category: note
+tag:
+    - 烂蒜
 ---
 
 <script setup>

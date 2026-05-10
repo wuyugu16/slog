@@ -96,7 +96,10 @@ export default defineUserConfig({
 			category: [
 				{
 					key: "category",
-					getter: page => [page.frontmatter.category || ""],
+					getter: page => 
+						(page.frontmatter.tag??[]).indexOf('烂蒜') == -1 ?
+						[page.frontmatter.category || ""] : 
+						[],
 					layout: "Category",
 					itemLayout: "Category",
 					frontmatter: () => ({
@@ -126,7 +129,7 @@ export default defineUserConfig({
 			type: [
 				{
 					key: "article",
-					filter: page => true,
+					filter: page => (page.frontmatter.tag??[]).indexOf("烂蒜")==-1,
 					layout: "Article",
 					frontmatter: () => ({
 						title: "Articles",
