@@ -42,6 +42,7 @@ export default defineUserConfig({
 			})
 			.set({
 				html: true,
+				breaks: true
 			});
 	},
 
