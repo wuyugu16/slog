@@ -113,7 +113,10 @@ export default defineUserConfig({
 				},
 				{
 					key: "tag",
-					getter: page => page.frontmatter.tag || [],
+					getter: page => 
+						(page.frontmatter.tag??[]).indexOf('烂蒜') == -1 ?
+						page.frontmatter.tag || [] :
+						[],
 					layout: "Tag",
 					itemLayout: "Tag",
 					frontmatter: () => ({
@@ -218,4 +221,5 @@ export default defineUserConfig({
 			},
 		},
 	}),
+ 	shouldPrefetch: false,
 });
