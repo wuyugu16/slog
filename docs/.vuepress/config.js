@@ -97,10 +97,7 @@ export default defineUserConfig({
 			category: [
 				{
 					key: "category",
-					getter: page => 
-						(page.frontmatter.tag??[]).indexOf('烂蒜') == -1 ?
-						[page.frontmatter.category || ""] : 
-						[],
+					getter: page => [page.frontmatter.category || ""],
 					layout: "Category",
 					itemLayout: "Category",
 					frontmatter: () => ({
@@ -113,10 +110,7 @@ export default defineUserConfig({
 				},
 				{
 					key: "tag",
-					getter: page => 
-						(page.frontmatter.tag??[]).indexOf('烂蒜') == -1 ?
-						page.frontmatter.tag || [] :
-						[],
+					getter: page => page.frontmatter.tag || [],
 					layout: "Tag",
 					itemLayout: "Tag",
 					frontmatter: () => ({
@@ -133,7 +127,6 @@ export default defineUserConfig({
 			type: [
 				{
 					key: "article",
-					filter: page => (page.frontmatter.tag??[]).indexOf("烂蒜")==-1,
 					layout: "Article",
 					frontmatter: () => ({
 						title: "Articles",
