@@ -4,7 +4,6 @@ date: 2026-4-12
 category: passage
 sticky: 1919
 tag:
-    - 烂蒜
 ---
 我又该说些什么呢
 

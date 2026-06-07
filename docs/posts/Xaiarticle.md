@@ -1,8 +1,6 @@
 ---
 date: 2026-4-6
 category: passage
-tag:
-    - 烂蒜
 ---
 
 # ai文章（仅供娱乐！）
