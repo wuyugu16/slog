@@ -50,7 +50,7 @@ export default defineUserConfig({
 
 	title: "wuyugu",
 
-	base: "/slog/"
+	base: "/slog/",
 
 	theme: defaultTheme({
 		sidebar: false,
