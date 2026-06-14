@@ -3,7 +3,6 @@ date: 2026-2-27
 category: passage
 tag:
     - 转载
-    - 烂蒜
 ---
 
 # 人类发言
