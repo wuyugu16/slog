@@ -3,6 +3,7 @@ date: 2026-2-27
 category: passage
 tag:
     - 转载
+    - 一八
 ---
 
 # 班长转

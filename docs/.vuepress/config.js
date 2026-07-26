@@ -2,6 +2,7 @@ import {blogPlugin} from "@vuepress/plugin-blog";
 import {defaultTheme} from "@vuepress/theme-default";
 import {defineUserConfig} from "vuepress";
 import {viteBundler} from "@vuepress/bundler-vite";
+import autoFrontmatter from "./plugins/auto-frontmatter";
 
 import footnote_plugin from "markdown-it-footnote";
 import math_plugin from 'markdown-it-math/temml';
@@ -167,6 +168,7 @@ export default defineUserConfig({
 			],
 			hotReload: true,
 		}),
+		autoFrontmatter(),
 	],
 
 	bundler: viteBundler({

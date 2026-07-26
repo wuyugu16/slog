@@ -1,6 +1,8 @@
 ---
 date: 2026-2-28
 category: tool
+tag:
+    - 一八
 ---
 
 # 关键词检测 / jcjc

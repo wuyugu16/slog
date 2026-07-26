@@ -2,6 +2,8 @@
 date: 2026-6-10
 category: passage
 title: 金句合集
+tag:
+    - 转载
 ---
 
 即使我没参加过省选

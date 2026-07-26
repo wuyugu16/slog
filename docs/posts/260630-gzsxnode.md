@@ -2,6 +2,8 @@
 date: 2026-6-30
 category: note
 title: 高中数学笔记
+tag:
+    - 数学
 ---
 ## 第四章 指对幂函数
 $b=\log_a N$，成 $N$ 为对数的**真数**

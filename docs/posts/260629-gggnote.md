@@ -2,6 +2,8 @@
 date: 2026-6-29
 category: note
 title: Googology笔记
+tag:
+    - 数学
 ---
 ## Veblen函数
 我下辈子一定打牢基础

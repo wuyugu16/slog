@@ -1,6 +1,8 @@
 ---
 date: 2022-01-04
 category: note
+tag:
+    - 一八
 ---
 
 <script setup>

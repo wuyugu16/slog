@@ -2,6 +2,8 @@
 date: 2026-6-19
 category: fun
 title: 小烧的电路
+tag: 
+    - 大饼
 ---
 
 <canvas width="800" height="450" style="border:1px black solid;margin:5px;" id="ca"/>
