@@ -31,6 +31,32 @@ $i=np\%$
 
 特别的，当 $p=0$ 或 $100$ 时，规定为极值
 
-$s_{ax+b} = a^2s_x^2$
+$s_{ax+b}^2 = a^2s_x^2$
 
 **茎叶图**：列为茎，行为叶；茎分组，叶细化；茎左右分数据
+
+对于两层抽样数据，假设分别抽取 $m,n$ 个数，平均数分别为 $x,y$，方差分别为 $s^2,t^2$，样本平均值为 $a$，方差为 $b^2$，则：
+$a = \frac{mx+ny}{m+n}$
+$b^2=\frac{\left(\sum_{i=1}^m(x_i-a)^2\right)+\left(\sum_{i=1}^n(y_i-a)^2\right)}{m+n}$
+$=\frac{\left(\sum_{i=1}^m((x_i-x)+(x-a))^2\right)+\left(\sum_{i=1}^n((y_i-y)+(y-a))^2\right)}{m+n}$
+$=\frac{\left(\sum_{i=1}^m(x_i-x)^2+2(x_i-x)(x-a)+(x-a)^2\right)+\left(\sum_{i=1}^n(y_i-y)^2+2(y_i-y)(y-a)+(y-a)^2\right)}{m+n}$
+$=\frac{ms^2+nt^2+\left(\sum_{i=1}^m2(x_i-x)(x-a)+(x-a)^2\right)+\left(\sum_{i=1}^n+2(y_i-y)(y-a)+(y-a)^2\right)}{m+n}$
+$=\frac{ms^2+nt^2+m(x-a)^2+n(y-a)^2+\left(\sum_{i=1}^m2(x_i-x)(x-a)\right)+\left(\sum_{i=1}^n+2(y_i-y)(y-a)\right)}{m+n}$
+$=\frac{ms^2+nt^2+m(x-a)^2+n(y-a)^2+2(x-a)\sum_{i=1}^m(x_i-x)+2(y-a)\sum_{i=1}^n(y_i-y)}{m+n}$
+$=\frac{ms^2+nt^2+m(x-a)^2+n(y-a)^2}{m+n}$
+$=\frac{1}{m+n}\left[(ms^2+nt^2)+\frac{mn}{m+n}(x-y)^2\right]$
+
+### 5.3 概率
+**随机现象**（**偶然现象**）：不确定
+**必然现象**（**确定性现象**）：确定
+**样本点**：随机试验中每一组可能出现的结果
+**样本空间**：样本点组成的集合，用 $\Omega$ 表示
+**随机事件**：样本空间的非空真子集
+**必然事件**：样本空间
+**不可能事件**：空集
+**事件**：三种时间的统称，用大写字母表示
+**基本事件**：$\mathrm{card}(A)=1$
+**互斥**：$AB=\emptyset$
+**对立事件**：$\bar{A}=\Omega \setminus A$
+**古典概率模型**：$\Omega$ 有限且每个基本事件概率相同
+**独立**：$P(AB)=P(A)P(B)$
