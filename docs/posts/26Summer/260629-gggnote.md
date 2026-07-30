@@ -14,9 +14,28 @@ $\varphi(2,0) = \beta\mapsto\varphi(1,\beta)\rm{fp.}$
 ### 多元Veblen函数
 定义 $\varphi(1,0,\gamma)=(1+\gamma) \rm{th} \alpha\mapsto\varphi(\alpha,0)\rm{fp.}$
 其余操作基本相同
-现在对于 $\varphi(\#,\alpha+1,O,\beta)$,其等于 $(1+\beta)\rm{th}\gamma\mapsto\varpih(\#,\alpha,\gamma,O)\rm{fp.}$
+现在对于 $\varphi(\#,\alpha+1,O,\beta)$,其等于 $(1+\beta)\rm{th}\gamma\mapsto\varphi(\#,\alpha,\gamma,O)\rm{fp.}$
 ### 序元Veblen函数
+$\mathrm{SVO} = \varphi(1@\omega)$
+$\varphi(1@\omega) = 1\mathrm{st} \forall n (\delta \mapsto \varphi(\delta @n) \mathrm{fp}.).$
+$\varphi(1@\omega,1@0) = 2\mathrm{nd} \forall n (\delta \mapsto \varphi(\delta @n) \mathrm{fp}.). = \sup \{\varphi((\varphi(1@\omega)+1)@0),\varphi((\varphi(1@\omega)+1)@1),\varphi((\varphi(1@\omega)+1)@2),...\}$
+$\varphi(2@\omega) = 1\mathrm{st} \forall n (\delta \mapsto \varphi(1@\omega,\delta @n) \mathrm{fp}.).$
+$\varphi(\omega @\omega) = 1\mathrm{st} \forall n (\delta \mapsto \varphi(n@\omega,\delta @n) \mathrm{fp}.).$
+$\varphi(\#,\alpha @\beta,\gamma @0) = (1+\gamma) \mathrm{th} \forall \delta < \alpha, \sigma < \beta (\rho \mapsto \varphi (\#, \delta @ \beta, \rho @ \sigma) \mathrm {fp}. ) .$
 ### 扩展序元Veblen函数
+$\varphi(1 @ (1,0)) = \mathrm {LVO}$
+$$
+\begin{cases}
+\varphi(\#,\alpha @\beta)[n] = \varphi (\#,\alpha[n] @ \beta) \text{ if } \alpha 是极限序数 \\
+\varphi(\#,(\alpha+1)@\beta)[n] = \varphi(\#,\alpha @\beta, 1@\beta[n]) \text{ if }  \beta 是非零极限序数\\
+\varphi(\#,(\alpha+1)@ (\beta+1) )[0] = \varphi(\#,\alpha @(\beta+1)) \\
+\varphi(\#,(\alpha+1)@ (\beta+1) )[n+1] = \varphi(\#,\alpha @(\beta+1), X[n] @\beta) \text{ if }  \beta 是后继序数 \\
+\varphi(\#,\alpha_1 @ \beta_1, (\alpha+1)@0)[0] = \varphi(\#,\alpha_1  @\beta_1,\alpha @0) \\
+\varphi(\#,\alpha_1 @ \beta_1, (\alpha+1)@0)[n] = \varphi(\#,\alpha_1[n] @\beta_1, (\varphi(\#,\alpha_1 @ \beta_1, \alpha @ 0)+1)@0) \text{ if }  \alpha_1 是极限序数 \\
+\varphi(\#,(\alpha_1+1) @ \beta_1, (\alpha+1)@0)[n] = \varphi(\#,\alpha_1 @\beta_1, 1 @ \beta_1[n], (\varphi(\#,(\alpha_1+1) @ \beta_1, \alpha @ 0)+1)@0) \text{ if }  \alpha_1 是后继序数, \beta_1 是极限序数 \\
+\varphi(\#,(\alpha_1+1) @ (\beta_1+1), (\alpha+1)@0)[n+1] = \varphi(\#,\alpha_1 @ (\beta_1+1), X[n] @ \beta_1) \text{ if }  \alpha_1 是后继序数, \beta_1 是后继序数 \\
+\end{cases}
+$$
 ### 弱Veblen函数
 ## OCF
 ### 含递归序数的MOCF

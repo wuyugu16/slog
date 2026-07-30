@@ -25,7 +25,6 @@ hello!
   - 做只有抽象词汇的汉语循环定义词典
   - 做48talkPPT
   - 做希望杯
-  - 归档旧日记
   - 做SKIΩ演算程序
   - *用程序求出password game最优解
   - ID-card破译器
