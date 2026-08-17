@@ -36,7 +36,53 @@ $$
 \varphi(\#,(\alpha_1+1) @ (\beta_1+1), (\alpha+1)@0)[n+1] = \varphi(\#,\alpha_1 @ (\beta_1+1), X[n] @ \beta_1) \text{ if }  \alpha_1 是后继序数, \beta_1 是后继序数 \\
 \end{cases}
 $$
+对于序数数组的情况，如下处理：
+$\varphi(2@(1,1)) = \sup\{\varphi(1@(1,1),1@(1,0)),\varphi(1@(1,1),\varphi(1@(1,1),1@(1,0))@(1,0))，...\}$
+$\varphi(1@(1@(1,0))) = \sup\{\varphi(1@\omega),\varphi(1@(1@\varphi(1@\omega))),...\}$
+$\varphi(1@(1,0),1@0)=\sup\{\varphi(1@(1,0))+1,\varphi(1@({\color{RED}\varphi(1@(1,0)+1)}))\}$
+$BHO=\sup\{\varphi(1,0),\varphi(1@(1,0)),\varphi(1@(1@(1,0))),...\}$
 ### 弱Veblen函数
+$\phi(\#,\alpha+1)=\phi(\#,\alpha)+1$
+:::info[分析]
+$\phi(1,0)=\omega=\varphi(1)$
+$\phi(1,\phi(1,0))=\omega2=\varphi(1)2$
+$\phi(1,\phi(1,\phi(1,0)))=\omega3=\varphi(1)3$
+$\phi(2,0)=\omega^2=\varphi(2)$
+$\phi(2,\phi(2,0))=\omega^22=\varphi(1)^22$
+$\phi(3,0)=\omega^3=\varphi(3)$
+$\phi(\phi(1,0),0)=\omega^\omega=\varphi(\varphi(1))$
+$\phi(1,0,0)=\varphi(1,0)$
+$\phi(1,0,\phi(1,0,0))=\varphi(1,0)2$
+$\phi(1,1,0)=\varphi(1,0)\varphi(1)$
+$\phi(1,2,0)=\varphi(1,0)\varphi(2)$
+$\phi(1,\phi(1,0,0),0)=\varphi(1,0)^2$
+$\phi(1,\phi(1,0,1),0)=\varphi(1,0)^2\varphi(1)$（此处可能有误）
+$\phi(1,\phi(1,1,0),0)=\varphi(1,0)^3$（此处可能有误）
+$\phi(1,\phi(1,\phi(1,0,0),0),0)=\varphi(1,0)^{\varphi(1,0)}$（此处可能有误）
+$\phi(2,0,0)=\varphi(1,1)$
+$\phi(\phi(1,0,0),0,0)=\varphi(1,\varphi(1,0))$
+$\phi(1,0,0,0)=\varphi(2,0)$
+$\phi(\phi(1,0,0,1),0,0)=\varphi(1,\varphi(2,0)+1)$（此处可能有误）
+$\phi(\phi(\phi(1,0,0,1),0,0),0,0)=\varphi(1,\varphi(1,\varphi(2,0)+1))$
+$\phi(\phi(\phi(1,0,0,1),0,0),0,0)=\varphi(2,1)$
+$\phi(2,0,0,0)=\varphi(2,1)$
+$\phi(1,0,0,0,0)=\varphi(3,0)$
+$\phi(1@\omega)=\varphi(\omega,0)$
+$\phi(1@\phi(1@\omega))=\varphi(\varphi(\omega,0),0)$
+$\phi(1@(1,0))=\varphi(1,0,0)$
+$\phi(1@(1,0),1@1)=\varphi(1,0,0)\varphi(1)$
+$\phi(1@(1,0),1@2)=\varphi(1,0,0)\varphi(1,0)$
+$\phi(1@(1,0),2@2)=\varphi(1,0,0)\varphi(1,1)$
+$\phi(1@(1,0),1@3)=\varphi(1,0,0)\varphi(2,0)$
+$\phi(1@(1,0),1@\phi(1@(1,0)))=\varphi(1,0,0)\varphi(\varphi(1,0,0),0)$
+$\phi(2@(1,0))=\varphi(1,0,1)$（此处可能有误）
+$\phi(\phi(1@(1,0))@(1,0))=\varphi(1,0,\varphi(1,0,0))$（此处可能有误）
+$\phi(1@(1,1))=\varphi(1,1,0)$（此处可能有误）
+$\phi(1@(1,2))=\varphi(1,2,0)$
+$\phi(1@(1,0,0))=\varphi(1,0,0,0)$
+$\phi(1@(1@\omega))=\varphi(1@\omega)$
+$\phi(1@(1@(1@...)))=\varphi(1@(1@(1@...)))=BHO$
+:::
 ## OCF
 ### 含递归序数的MOCF
 定义含递归序数的 $\rm{MOCF} \psi(\alpha)$ 为：

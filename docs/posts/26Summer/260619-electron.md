@@ -6,32 +6,29 @@ tag:
     - 大饼
 ---
 
-<canvas width="800" height="450" style="border:1px black solid;margin:5px;" id="ca"/>
-<p v-html="tip"></p>
+<canvas width="1100" height="400" style="border:1px black solid;margin:5px;" id="ca"/>
+<div style="border:1px black solid;margin:5px;margin-top:10px;width:1100px;height:50px;">
+    <p v-html="tip"></p>
+</div>
+关卡：{{ gdata.title }}
+<input type='button' value='跳至关卡'>&ensp;
+<input type='number' :bind="__gnumber">&ensp;&ensp;
+<input type='button' value='加载关卡'>&ensp;
+<input type='text' :bind="__gtext">
 项目开发中 / Developing...
 
 <script setup>
 import {onMounted,ref} from 'vue';
 import * as fabric from 'fabric'
-let tip = ref("");
-let test = [
+var tip = ref(""), gdata = ref({});
+var __gnumber = ref(0), __gtext = ref("");
+const gs = [
     {
+        title:"引入",
+        width:7,
+        height:3
     }
 ]
-let usedots = [];
-function line(x1,y1,left,top,agl=0){
-    return new fabric.Polyline([
-        {x:0,y:0},
-        {x:x1,y:y1}
-    ],{
-        stroke:'black',
-        left: left,
-        top: top,
-        angle: agl,
-        fill:null
-    })
-}
-console.clear();
 onMounted(()=>{
     let cvs = new fabric.Canvas('ca');
     cvs.selection = false;
