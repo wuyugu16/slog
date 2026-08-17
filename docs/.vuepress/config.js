@@ -2,10 +2,16 @@ import {blogPlugin} from "@vuepress/plugin-blog";
 import {defaultTheme} from "@vuepress/theme-default";
 import {defineUserConfig} from "vuepress";
 import {viteBundler} from "@vuepress/bundler-vite";
+import autoFrontmatter from "./plugins/auto-frontmatter";
+import dataPlugin from "./plugins/dataPlugin";
 
 import footnote_plugin from "markdown-it-footnote";
 import math_plugin from 'markdown-it-math/temml';
 import container_plugin from "markdown-it-container";
+
+import { getDirname, path } from 'vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
 	MarkdownOptions: {},
@@ -169,6 +175,8 @@ export default defineUserConfig({
 			],
 			hotReload: true,
 		}),
+		autoFrontmatter(),
+		dataPlugin,
 	],
 
 	bundler: viteBundler({
@@ -217,4 +225,8 @@ export default defineUserConfig({
 		},
 	}),
  	shouldPrefetch: false,
+	alias: {
+    // 定义一个 @data 别名，指向你的数据文件所在目录
+    	'@public': path.resolve(__dirname, './public/public'),
+  	},
 });

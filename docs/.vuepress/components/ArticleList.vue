@@ -24,16 +24,16 @@ defineProps({
 			<hr />
 
 			<div class="article-info">
-				<span v-if="info.date" class="date"
-					>Date: {{ new Date(info.date).toLocaleDateString() }}</span
+				<code v-if="info.date" class="date"
+					>{{ new Date(info.date).toLocaleDateString() }}</code
 				>
-
-				<span v-if="info.category" class="category"
-					>Category: {{ info.category }}</span
+&ensp;
+				<code v-if="info.category" class="category"
+					>{{ info.category }}</code
 				>
-
-				<span v-if="info.tag" class="tag"
-					>Tag: {{ info.tag.join(", ") }}</span
+&ensp;
+				<code v-if="info.tag" class="tag"
+					>{{ info.tag.join(", ") }}</code
 				>
 			</div>
 		</article>
@@ -45,18 +45,20 @@ defineProps({
 
 .article-wrapper {
 	@include mixins.content-wrapper;
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.25rem;
 }
 
 .article {
 	box-sizing: border-box;
-	margin: 0 auto 1.25rem;
 	padding: 1rem 1.25rem;
 	border: 1px solid var(--vp-c-border);
 	border-radius: 0.4rem;
-
+	width: 400px;
+	flex-shrink: 0;
 	color: var(--vp-c-text);
-
 	text-align: start;
 
 	&:hover {
@@ -70,8 +72,8 @@ defineProps({
 
 	.article-info {
 		> span {
-			margin-inline-end: 0.5em;
-			line-height: 1.8;
+		margin-inline-end: 0.5em;
+		line-height: 1.8;
 		}
 	}
 }
