@@ -144,4 +144,4 @@ $\psi(\Omega^{\Omega^{\Omega2}})=\varphi(1@(2,0))$
 $\psi(\Omega^{\Omega^{\Omega^2}})=\varphi(1@(1,0,0))$
 $\psi(\Omega^{\Omega^{\Omega^\omega}})=\varphi(1@(1@\omega))$
 $\psi(\Omega^{\Omega^{\Omega^\Omega}})=\varphi(1@(1@(1,0)))$
-$\psi(\epsilon_{\Omega+1})=BHO$
+$\psi(\varepsilon_{\Omega+1})=BHO$
