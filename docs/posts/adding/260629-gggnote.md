@@ -116,7 +116,7 @@ $\psi(\Omega+\zeta_1)=\zeta_1$
 
 我们发现如果想要用到 $\zeta_1$，就需要 $\Omega+\zeta_1$ 在 $C$ 内，这有需要 $C$ 内出现一个 $\zeta_1$，所以我们又卡在了 $\zeta_1$ 的位置
 
-直到 $\psi(\Omega2)=\zeta_1$，此时 $\Omega_2 \in C$，所以 $\psi(\Omega2+1)=\epsilon_{\zeta_1+1}$
+直到 $\psi(\Omega2)=\zeta_1$，此时 $\Omega2 \in C$，所以 $\psi(\Omega2+1)=\epsilon_{\zeta_1+1}$
 
 $\psi(\Omega n)=\zeta_n$
 $\psi(\Omega^2)=\varphi(3,0)$
@@ -145,3 +145,43 @@ $\psi(\Omega^{\Omega^{\Omega^2}})=\varphi(1@(1,0,0))$
 $\psi(\Omega^{\Omega^{\Omega^\omega}})=\varphi(1@(1@\omega))$
 $\psi(\Omega^{\Omega^{\Omega^\Omega}})=\varphi(1@(1@(1,0)))$
 $\psi(\varepsilon_{\Omega+1})=BHO$
+### 含自然数下标的MOCF
+$\psi_1(0)=\varepsilon_{\Omega+1}$
+$\psi_1(1)=\varepsilon_{\Omega+1}^{\varepsilon_{\Omega+1}^{\varepsilon_{\Omega+1}^{...}}}=\varepsilon_{\Omega+2}$
+$\psi_1(\omega)=\varepsilon_{\Omega+\omega}$
+$\psi_1(\Omega)=\varepsilon_{\Omega2}$
+$\psi_1(\psi_1(0))=\varepsilon_{\varepsilon_{\Omega+1}}$
+$\psi_1(\Omega_2)=\zeta_{\Omega+1}$
+$BO=\sup\{\psi(\Omega),\psi(\Omega_2),\psi(\Omega_3),...\}$
+
+对于一个MOCF表达式 $\#_0(\psi_m(\# * \Omega_n))$  （$m<n$），其等于 $\#_0(\psi_m(\# * \psi_{n-1}(\# * \psi_{n-1}(\# * ...))))$
+
+Hydra：从末项出发，找到前面的某个东西，然后复制
+
+### 含序数下标的MOCF
+$\psi(\Omega_\omega)=BO$
+$\psi(\psi_\omega(0))=TFBO$
+$\psi(\Omega_\Omega)=BIO$
+$\psi(\alpha\mapsto\Omega_\alpha \mathrm{fp.})=EBO$
+
+### BOCF
+$\psi(0)=1$
+$\psi(\alpha+1)=\psi(\alpha)ω$
+其余的和BOCF相同
+
+#### 钝西
+
+$\psi(\Omega)=\varepsilon_0$
+$\psi(\Omega+1)=\omega^{\varepsilon_0+1}$
+接下来 $\psi_1(0)=\Omega$
+$\psi_1(\alpha+1)=\psi_1(\alpha)\omega$
+$\psi(\Omega2)=\varepsilon_2$
+$\psi(\psi_1(1))=\varepsilon_\omega$
+$\psi(\psi_1(\psi(\psi_1(1))))=\varepsilon_{\varepsilon_0}$
+$\psi(\psi_1(\psi_1(1)))=\psi(\Omega^2)=\zeta_0$
+$\psi(\psi_1(\psi_1(1)2))=\eta_0$
+$\psi(\psi_1(\psi_1(\psi_1(0))))=\psi(\Omega^\Omega)=\Gamma_0$
+
+$\psi(\psi_1(\psi_1(\psi_1(1))))=\psi(\Omega^{\Omega^\omega})=SVO$
+$\psi(\psi_1(\psi_1(\psi_1(\psi_1(0)))))=\psi(\Omega^{\Omega^\Omega})=LVO$
+$\psi(\Omega_2)=\psi(\psi_2(0))=BO$

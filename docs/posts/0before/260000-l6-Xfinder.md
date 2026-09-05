@@ -21,7 +21,7 @@ var ans = [];
 var key = [
     ["jc","swd","gb","lsq","cy","bk","sff","bc"],
     ["jc","gb","jxy","ls","ds","ltt","sff","zyt","zx",/**/"wzl","bk","bc","lzj","pd","ll"],
-    ["srq","wyh","gjy","zzh","tby","zrx","wzh","zjm","lsq","fsx","fbf","cyy","wyq","lts","rh","wjx","qhr","mzs","yxb","lz","hcx","syx","jzh","wxr","sws","dcw","wy","cby","jkr","lqy","zyf","zsj","axy","wym","cy","hym","syf","cbx","zxh","zjw","yac","zjy","djn","wwh","zjh","zsh","xxy","zwc","qxl","chr",/**/"yjk","lsx","xzq","zky","bsq","zxy","zzn"],
+    ["srq","wyh","gjy","zzh","tby","zrx","wzh","zjm","lsq","fsx","fbf","cyy","wyq","lts","rh","wjx","qhr","mzs","yxb","lz","hcx","syx","jzh","wxr","sws","dcw","wy","cby","jkr","lqy","zyf","zsj","axy","wym","cy","hym","syf","cbx","zxh","zjw","yac","zjy","djn","wwh","zjh","zsh","xxy","zwc","qxl","chr",/**/"bsq","xzq"],
     ["jb","jy","sm"]
 ];
 function findAll(str, subStr) {

@@ -60,3 +60,13 @@ $=\frac{1}{m+n}\left[(ms^2+nt^2)+\frac{mn}{m+n}(x-y)^2\right]$
 **对立事件**：$\bar{A}=\Omega \setminus A$
 **古典概率模型**：$\Omega$ 有限且每个基本事件概率相同
 **独立**：$P(AB)=P(A)P(B)$
+## 第六章 平面向量初步
+### 6.1 平面向量极其线性运算
+有向线段的两个点为**始点**和**终点**
+### 6.2 向量基本定理与向量的坐标
+对于平面上共线的两点 $A,B$，$P\text{ is on }l_{AB}\leftrightarrow \exist t, \overrightarrow{OP}=(1-t)\overrightarrow{OA}+t\overrightarrow{OB}$
+对于 $\overrightarrow{a}$ 即与其共线的单位向量 $e$，称 $\overrightarrow{a}$ 的**坐标**为 $\frac{\overrightarrow{a}}{e}$
+零向量与任意向量垂直，与任意向量平行（共线）
+垂直的单位向量基底称为**正交基底**，分解成为**正交分解**
+对于一组正交基底，$(x,y)$ 为某向量的**坐标**
+平行的向量总满足 $x_1y_2=x_2y_1$

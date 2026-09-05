@@ -25,7 +25,6 @@ hello!
   - 做48talkPPT
   - 做希望杯
   - *用程序求出password game最优解
-  - ID-card破译器
   - 看6star英语笔记
   - 如果只允许成对字符/三连字符/要求代码回文，js能干什么
   - 一心四用挑战
