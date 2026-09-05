@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>数学题2 | wuyugu</title><meta name="description" content="">
+    <link rel="preload" href="/slog/assets/style-CJ4IQPgX.css" as="style"><link rel="stylesheet" href="/slog/assets/style-CJ4IQPgX.css">
+    <link rel="modulepreload" href="/slog/assets/app-okPrtdaK.js"><link rel="modulepreload" href="/slog/assets/260701-648pro.html-CzFbHUsn.js">
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container no-sidebar external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/slog/"><!----><span class="vp-site-name" aria-hidden="true">wuyugu</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/" aria-label="Home"><!--[--><!--[--><!--]--><!--]-->Home<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/article/" aria-label="所有页面"><!--[--><!--[--><!--]--><!--]-->所有页面<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/category/" aria-label="分类"><!--[--><!--[--><!--]--><!--]-->分类<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/tag/" aria-label="标签"><!--[--><!--[--><!--]--><!--]-->标签<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/posts/website.html" aria-label="网站"><!--[--><!--[--><!--]--><!--]-->网站<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/" aria-label="Home"><!--[--><!--[--><!--]--><!--]-->Home<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/article/" aria-label="所有页面"><!--[--><!--[--><!--]--><!--]-->所有页面<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/category/" aria-label="分类"><!--[--><!--[--><!--]--><!--]-->分类<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/tag/" aria-label="标签"><!--[--><!--[--><!--]--><!--]-->标签<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/slog/posts/website.html" aria-label="网站"><!--[--><!--[--><!--]--><!--]-->网站<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div><ol><li>如果一个三位数，满足截取其十进制表示的任意一个非空字串，都满足其是一个正整数且最大质因数小于 <math><mn>4</mn></math>，那么这个数最大为？</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>首先考虑一位数，发现 <math><mn>1,2,3,4,6,8,9</mn></math> 符合条件<br> 接下来看两位数，因为可以从中单独截取一位数，所以其必定有以上的几个一位数组成<br> 枚举可得满足条件的有 <math><mn>12,16,18,24,32,36,48,64,81,96</mn></math><br> 接下来对于三位数，其前两位和后两位一定是以上的两位数之一。首位拼接，得到：<br><math><mn>124,164,181,248,324,364,481,648,812,816,818,964</mn></math><br> 其中：<br><math><mrow><mn>124</mn><mo>=</mo></mrow><mrow><mn>31</mn><mo>∗</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mn>164</mn><mo>=</mo></mrow><mrow><mn>41</mn><mo>∗</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mn>181</mn></math> 是质数<br><math><mrow><mn>248</mn><mo>=</mo></mrow><mrow><mn>31</mn><mo>∗</mo></mrow><mrow><mn>8</mn></mrow></math><br><math><mrow><mn>324</mn><mo>=</mo></mrow><mrow><mn>81</mn><mo>∗</mo></mrow><mrow><mn>4</mn></mrow></math> （符合）<br><math><mrow><mn>364</mn><mo>=</mo></mrow><mrow><mn>13</mn><mo>∗</mo></mrow><mrow><mn>7</mn><mo>∗</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mn>481</mn><mo>=</mo></mrow><mrow><mn>13</mn><mo>∗</mo></mrow><mrow><mn>37</mn></mrow></math><br><math><mrow><mn>648</mn><mo>=</mo></mrow><mrow><mn>81</mn><mo>∗</mo></mrow><mrow><mn>8</mn></mrow></math> （符合）<br><math><mrow><mn>812</mn><mo>=</mo></mrow><mrow><mn>7</mn><mo>∗</mo></mrow><mrow><mn>29</mn><mo>∗</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mn>816</mn><mo>=</mo></mrow><mrow><mn>17</mn><mo>∗</mo></mrow><mrow><mn>3</mn><mo>∗</mo></mrow><mrow><mn>16</mn></mrow></math><br><math><mrow><mn>818</mn><mo>=</mo></mrow><mrow><mn>409</mn><mo>∗</mo></mrow><mrow><mn>2</mn></mrow></math><br><math><mrow><mn>964</mn><mo>=</mo></mrow><mrow><mn>241</mn><mo>∗</mo></mrow><mrow><mn>4</mn></mrow></math><br> 故最大的数为 <math><mn>648</mn></math></p></div></details><ol start="2"><li>如果一个三位数 <math><mover><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover></math> 满足 <math><mrow><mi>a</mi><mo separator="true">,</mo></mrow><mrow><mi>b</mi><mo separator="true">,</mo></mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mrow><mn>0</mn><mo separator="true">,</mo></mrow><mrow><mrow><mi>gcd</mi><mo>⁡</mo></mrow><mo form="prefix" stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><msup><mo form="postfix" stretchy="false">)</mo><mn>4</mn></msup><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo></mrow><mo form="prefix" stretchy="false">(</mo><mover><mrow><mi>a</mi><mi>b</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo separator="true">,</mo><mover><mrow><mi>b</mi><mi>c</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo form="postfix" stretchy="false">)</mo><mo>≠</mo><mn>1</mn></mrow></math>，则这个数为</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p>648</p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>考虑 <math><mrow><mi>n</mi><mo>=</mo></mrow><mrow><mrow><mi>gcd</mi><mo>⁡</mo></mrow><mo form="prefix" stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo form="postfix" stretchy="false">)</mo></mrow></math> 的大小<br> 首先 <math><msup><mi>n</mi><mn>4</mn></msup></math> 一定为两位数，所以 <math><mrow><mi>n</mi><mo>=</mo></mrow><mrow><mn>2</mn></mrow></math> 或 <math><mn>3</mn></math><br> 当 <math><mrow><mi>n</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math> 时，<math><mrow><mrow><mi>gcd</mi><mo>⁡</mo></mrow><mo form="prefix" stretchy="false">(</mo><mover><mrow><mi>a</mi><mi>b</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo separator="true">,</mo><mover><mrow><mi>b</mi><mi>c</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>81</mn></mrow></math>，所以 <math><mrow><mover><mrow><mi>a</mi><mi>b</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo>=</mo></mrow><mrow><mover><mrow><mi>b</mi><mi>c</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo>=</mo></mrow><mrow><mn>81</mn></mrow></math>，矛盾<br> 故 <math><mrow><mi>n</mi><mo>=</mo></mrow><mrow><mn>2</mn></mrow></math>，<math><mrow><mrow><mi>gcd</mi><mo>⁡</mo></mrow><mo form="prefix" stretchy="false">(</mo><mover><mrow><mi>a</mi><mi>b</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo separator="true">,</mo><mover><mrow><mi>b</mi><mi>c</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>16</mn></mrow></math> 且 <math><mrow><mi>a</mi><mo separator="true">,</mo></mrow><mrow><mi>b</mi><mo separator="true">,</mo></mrow><mrow><mi>c</mi></mrow></math> 都是偶数<br> 考虑满足以上条件的 <math><mn>16</mn></math> 的倍数：<math><mn>48,64</mn></math><br> 组合即为 <math><mn>648</mn></math></p></div></details><ol start="3"><li>如果一个三位数 <math><mover><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover></math> 满足 <math><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow></math> 构成等差数列，<math><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>+</mo><mn>10</mn><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow></math> 构成公比非 <math><mn>1</mn></math> 的等比数列，则这个数最小为</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>考虑满足条件的等比数列：<br><math><mn>1,4,16</mn></math><br><math><mn>2,6,18</mn></math><br><math><mn>3,6,12</mn></math><br><math><mn>4,8,16</mn></math><br> 只有最后一组符合等差<br> 故 <math><mrow><mi>a</mi><mo>=</mo></mrow><mrow><mn>6</mn></mrow></math>，<math><mrow><mo form="prefix" stretchy="false">{</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>4,8</mn><mo form="postfix" stretchy="false">}</mo></mrow></math><br> 最小的为 <math><mn>648</mn></math></p></div></details><ol start="4"><li>对于两个正整数 <math><mrow><mi>a</mi><mo separator="true">,</mo></mrow><mrow><mi>b</mi></mrow></math> 即一位数 <math><mrow><mi>c</mi><mo>=</mo></mrow><mrow><mrow><mi>gcd</mi><mo>⁡</mo></mrow><mo form="prefix" stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo form="postfix" stretchy="false">)</mo></mrow></math>，满足 <math><mrow><mi>a</mi><mo>+</mo></mrow><mrow><mi>b</mi><mo>=</mo></mrow><mrow><msup><mi>c</mi><mn class="tml-sml-pad">2</mn></msup></mrow></math>，且三位数 <math><mrow><mi>d</mi><mo>=</mo></mrow><mrow><mn>10</mn><mi>a</mi><mo>+</mo></mrow><mrow><mi>b</mi></mrow></math> 是 <math><mrow><mi>c</mi><mo>−</mo></mrow><mrow><mn>1</mn></mrow></math> 的倍数，不是 <math><mn>10</mn></math> 的倍数，求 <math><mi>d</mi></math></li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>考虑 <math><mi>c</mi></math> 的取值<br> 注意到可以将 <math><mrow><mi>a</mi><mo separator="true">,</mo></mrow><mrow><mi>b</mi></mrow></math> 写为 <math><mrow><mi>m</mi><mi>c</mi><mo separator="true">,</mo></mrow><mrow><mi>n</mi><mi>c</mi></mrow></math>，且 <math><mrow><mi>m</mi><mi>n</mi></mrow></math> 互质<br> | <math><mi>c</mi></math> | <math><mi>d</mi></math> |<br> | <math><mn>4</mn></math> | <math><mn>124</mn></math> |<br> | <math><mn>5</mn></math> | <math><mn>205,115,160</mn></math> |<br> | <math><mn>6</mn></math> | <math><mn>630</mn></math> |<br> | <math><mn>7</mn></math> | <math><mn>427,175,364,238,301</mn></math> |<br> | <math><mn>8</mn></math> | <math><mn>568,280,424</mn></math> |<br> | <math><mn>9</mn></math> | <math><mn>729,648,243,405,486</mn></math> |</p><p>只有 <math><mn>648</mn></math> 符合条件</p></div></details><ol start="5"><li><math><mrow><mi>a</mi><mo>+</mo></mrow><mrow><mi>b</mi><mo>=</mo></mrow><mrow><mn>70</mn></mrow></math>,<math><mrow><mi>a</mi><mo separator="true">,</mo></mrow><mrow><mi>b</mi></mrow></math> 都是两位的质数,<math><mrow><mi>c</mi><mo>=</mo></mrow><mrow><mi>a</mi><mi>b</mi><mo>−</mo></mrow><mrow><mn>1</mn></mrow></math>，<math><mi>c</mi></math> 最小是</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p><math><mrow><mi>a</mi><mo>=</mo></mrow><mrow><mn>11</mn><mo separator="true">,</mo></mrow><mrow><mi>b</mi><mo>=</mo></mrow><mrow><mn>59</mn></mrow></math></p></div></details><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">6.</span>
+<span class="line">    A B C</span>
+<span class="line">  ×   D E</span>
+<span class="line">-----------</span>
+<span class="line">  B 5 D A</span>
+<span class="line">1 9 B B</span>
+<span class="line">-----------</span>
+<span class="line">2 D 9 E A</span>
+<span class="line">不同的字母或数字代表不同的数字</span>
+<span class="line">求 ABC</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>注意到有 <math><mn>1,2,5,9</mn></math> 已经出现，剩下 <math><mn>0,3,4,6,7,8</mn></math><br> 有首位数字不为 <math><mn>0</mn></math> 得 <math><mrow><mi>A</mi><mo separator="true">,</mo></mrow><mrow><mi>B</mi><mo separator="true">,</mo></mrow><mrow><mi>D</mi><mo>≠</mo></mrow><mrow><mn>0</mn></mrow></math><br> 注意到乘积最后一位不得 <math><mn>0</mn></math>，所以 <math><mrow><mi>C</mi><mo separator="true">,</mo></mrow><mrow><mi>E</mi><mo>≠</mo></mrow><mrow><mn>0</mn></mrow></math><br><math><mrow><mo form="prefix" stretchy="false">{</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo separator="true">,</mo><mi>E</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>3,4,6,7,8</mn><mo form="postfix" stretchy="false">}</mo></mrow></math><br> 首先 <math><mrow><mi>C</mi><mo>×</mo></mrow><mrow><mi>E</mi></mrow></math> 末尾是 <math><mi>A</mi></math><br> 如果 <math><mrow><mi>A</mi><mo separator="true">,</mo></mrow><mrow><mi>C</mi><mo separator="true">,</mo></mrow><mrow><mi>E</mi></mrow></math> 均为奇数，则其为 <math><mn>3,5,7</mn></math>，这三个数中任意两数的乘积的各位都不等于剩下的数，矛盾<br><math><mrow><mi>A</mi><mo separator="true">,</mo></mrow><mrow><mi>C</mi><mo separator="true">,</mo></mrow><mrow><mi>E</mi></mrow></math> 中至少有一个偶数<br> 偶数乘奇数还得偶数，故 <math><mi>A</mi></math> 是偶数<br><math><mrow><mi>D</mi><mo>+</mo></mrow><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mi>E</mi></mrow></math>，考虑偶数只剩一个，所以只能是奇+奇=偶/奇+偶=奇<br> 那剩下的 <math><mi>C</mi></math> 一定是偶数<br><math><mrow><mi>C</mi><mo>×</mo></mrow><mrow><mi>D</mi></mrow></math> 末尾为 <math><mi>B</mi></math> ，故 <math><mi>B</mi></math> 是偶数<br><math><mrow><mo form="prefix" stretchy="false">{</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mi>C</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>4,6,8</mn><mo form="postfix" stretchy="false">}</mo><mo separator="true">,</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mi>D</mi><mo separator="true">,</mo><mi>E</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>3,7</mn><mo form="postfix" stretchy="false">}</mo></mrow></math><br><math><mrow><mi>B</mi><mo>&gt;</mo></mrow><mrow><mn>1</mn></mrow></math>，所以 <math><mrow><mover><mrow><mi>B</mi><mn>5</mn><mi>D</mi><mi>A</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo>&gt;</mo></mrow><mrow><mover><mrow><mn>19</mn><mi>D</mi><mi>B</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover></mrow></math>，故 <math><mrow><mi>D</mi><mo>&lt;</mo></mrow><mrow><mi>E</mi></mrow></math>，<math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>3</mn><mo separator="true">,</mo></mrow><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>7</mn></mrow></math><br> 然后简单推理可知 <math><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo>=</mo></mrow><mrow><mn>648</mn></mrow></math></p></div></details><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">7.</span>
+<span class="line">        1 F _ 1 E A</span>
+<span class="line">     ______________</span>
+<span class="line">E F / A B C _ _ B C</span>
+<span class="line">      E F</span>
+<span class="line">      -----</span>
+<span class="line">      G F C</span>
+<span class="line">      G _ _</span>
+<span class="line">      -------</span>
+<span class="line">        D _ _</span>
+<span class="line">        D C _</span>
+<span class="line">        -------</span>
+<span class="line">            _ _</span>
+<span class="line">            E F</span>
+<span class="line">            -----</span>
+<span class="line">            D E B</span>
+<span class="line">            D _ _</span>
+<span class="line">            -------</span>
+<span class="line">              G E C</span>
+<span class="line">              G _ _</span>
+<span class="line">              -----</span>
+<span class="line">                D A</span>
+<span class="line">不同的字母代表不同的数字，横线和字母可能相同</span>
+<span class="line">求 ABC</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>先看：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">G F C</span>
+<span class="line">G _ a</span>
+<span class="line">-------</span>
+<span class="line">  D b _</span>
+<span class="line">  D C _</span>
+<span class="line">  -------</span>
+<span class="line">      _ _</span>
+<span class="line">（部分横线用小写字母指代，故小写字母之间可以相同，大小写字母之间可以相同，下同）</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>此处两个三位数相减得到一位数，所以 <math><mrow><mi>b</mi><mo>=</mo></mrow><mrow><mi>C</mi></mrow></math> 或 <math><mrow><mi>b</mi><mo>=</mo></mrow><mrow><mi>C</mi><mo>+</mo></mrow><mrow><mn>1</mn></mrow></math><br> 如果 <math><mrow><mi>b</mi><mo>=</mo></mrow><mrow><mi>C</mi></mrow></math>，又因为 <math><mrow><mi>C</mi><mo>−</mo></mrow><mrow><mi>a</mi><mo>≡</mo></mrow><mrow><mi>b</mi></mrow></math>（没有进位），所以 <math><mrow><mi>a</mi><mo>=</mo></mrow><mrow><mn>0</mn></mrow></math><br> 注意到 <code>G_a = EF * F</code>，所以 <math><mrow><mi>F</mi><mo>=</mo></mrow><mrow><mn>0</mn></mrow></math>，此时商为 <math><mn>0</mn></math>，不应再计算减法<br> 故 <math><mrow><mi>b</mi><mo>=</mo></mrow><mrow><mi>C</mi><mo>+</mo></mrow><mrow><mn>1</mn></mrow></math>，<math><mrow><mi>a</mi><mo>=</mo></mrow><mrow><mn>9</mn></mrow></math><br> 又因为 <math><mrow><mover><mrow><mi>E</mi><mi>F</mi></mrow><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mo>×</mo></mrow><mrow><mi>F</mi><mo>≡</mo></mrow><mrow><mi>a</mi></mrow></math>，所以 <math><mrow><mi>F</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math> 或 <math><mn>7</mn></math></p><details class="info"><summary>如果 <math><mrow><mi>F</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math></summary><div class="det-in"><p>显然 <math><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mi>F</mi><mo>+</mo></mrow><mrow><mi>F</mi><mo>=</mo></mrow><mrow><mn>6</mn></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">        1 3 _ 1 E A</span>
+<span class="line">     ______________</span>
+<span class="line">E 3 / A 6 C _ _ 6 C</span>
+<span class="line">      E 3</span>
+<span class="line">      -----</span>
+<span class="line">      G 3 C</span>
+<span class="line">      G _ 9</span>
+<span class="line">      -------</span>
+<span class="line">        D _ _</span>
+<span class="line">        D C _</span>
+<span class="line">        -------</span>
+<span class="line">            _ _</span>
+<span class="line">            E 3</span>
+<span class="line">            -----</span>
+<span class="line">            D E 6</span>
+<span class="line">            D _ _</span>
+<span class="line">            -------</span>
+<span class="line">              G E C</span>
+<span class="line">              G _ _</span>
+<span class="line">              -----</span>
+<span class="line">                D A</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>考虑：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">_ _</span>
+<span class="line">E 3</span>
+<span class="line">-----</span>
+<span class="line">D E 6</span>
+<span class="line">D _ _</span>
+<span class="line">-------</span>
+<span class="line">  G E C</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>容易发现 <math><mrow><mi>c</mi><mo>≡</mo></mrow><mrow><mn>3</mn><mi>E</mi></mrow></math>，所以 <math><mrow><mn>4</mn><mi>E</mi><mo>=</mo></mrow><mrow><mn>6</mn></mrow></math><br><math><mrow><mi>E</mi><mo>∈</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>4,9</mn><mo form="postfix" stretchy="false">}</mo></mrow></math><br> 而 <math><mi>E</mi></math> 作为减数的十位出现，差还是两位数，说明 <math><mrow><mi>E</mi><mo>≠</mo></mrow><mrow><mn>9</mn></mrow></math><br><math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mn>43</mn><mo>×</mo></mrow><mrow><mn>4</mn><mo>=</mo></mrow><mrow><mn>172</mn></mrow></math>，所以 <math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math><br> 此时 <code>DE6-D__</code>，即 <math><mrow><mn>146</mn><mo>−</mo></mrow><mrow><mn>172</mn></mrow></math> 不够减，矛盾</p></div></details><details class="info"><summary>如果 <math><mrow><mi>F</mi><mo>=</mo></mrow><mrow><mn>7</mn></mrow></math></summary><div class="det-in"><p>显然 <math><mrow><mi>B</mi><mo>≡</mo></mrow><mrow><mi>F</mi><mo>+</mo></mrow><mrow><mi>F</mi><mo>≡</mo></mrow><mrow><mn>4</mn></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">        1 7 _ 1 E A</span>
+<span class="line">     ______________</span>
+<span class="line">E 7 / A 4 C _ _ 4 C</span>
+<span class="line">      E 7</span>
+<span class="line">      -----</span>
+<span class="line">      G 7 C</span>
+<span class="line">      G _ _</span>
+<span class="line">      -------</span>
+<span class="line">        D _ _</span>
+<span class="line">        D C _</span>
+<span class="line">        -------</span>
+<span class="line">            _ _</span>
+<span class="line">            E 7</span>
+<span class="line">            -----</span>
+<span class="line">            D E 4</span>
+<span class="line">            D _ _</span>
+<span class="line">            -------</span>
+<span class="line">              G E C</span>
+<span class="line">              G _ _</span>
+<span class="line">              -----</span>
+<span class="line">                D A</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>观察：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">_ _</span>
+<span class="line">E 7</span>
+<span class="line">-----</span>
+<span class="line">D E 4</span>
+<span class="line">D _ d</span>
+<span class="line">-------</span>
+<span class="line">  G E C</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><math><mrow><mi>d</mi><mo>≡</mo></mrow><mrow><mn>7</mn><mi>E</mi></mrow></math>，所以 <math><mrow><mn>8</mn><mi>E</mi><mo>≡</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math> 或 <math><mn>8</mn></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">     ______________</span>
+<span class="line">E 7 / A 4 C _ _ 4 C</span>
+<span class="line">      E 7</span>
+<span class="line">      -----</span>
+<span class="line">      G 7 C</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果 <math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>8</mn></mrow></math>，<code>A4-87-G7</code>，<math><mi>G</mi></math> 最小为 <math><mn>1</mn></math>，<code>A4=87+17=104</code>，矛盾<br> 所以 <math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math>，易得 <code>D__=3*37=111</code></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">        1 7 _ 1 3 A</span>
+<span class="line">     ______________</span>
+<span class="line">3 7 / A 4 C _ _ 4 C</span>
+<span class="line">      3 7     （2. A-1-3=G -&gt; A=6）</span>
+<span class="line">      -----</span>
+<span class="line">      G 7 C </span>
+<span class="line">      G _ _ </span>
+<span class="line">      -------</span>
+<span class="line">        1 _ _</span>
+<span class="line">        1 C _</span>
+<span class="line">        -------</span>
+<span class="line">            _ _</span>
+<span class="line">            3 7</span>
+<span class="line">            -----</span>
+<span class="line">            1 3 4</span>
+<span class="line">            1 1 1</span>
+<span class="line">            -------</span>
+<span class="line">              G 3 C    （1. -&gt; G=2） （4. 222+1A=222+16=238，C=8）</span>
+<span class="line">              G _ _    （3. 37*A=37*6=222）</span>
+<span class="line">              -----</span>
+<span class="line">                1 A</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>故 <math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>6</mn><mo separator="true">,</mo></mrow><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>9</mn></mrow></math></p></div></details></div></details><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">8.</span>
+<span class="line">    E _ _ _ D</span>
+<span class="line">  ×     A B C</span>
+<span class="line">-------------</span>
+<span class="line">  E _ _ A _ _</span>
+<span class="line">  _ B _ E A</span>
+<span class="line">C E B _ B</span>
+<span class="line">-------------</span>
+<span class="line">C _ D D E D _</span>
+<span class="line">不同的字母代表不同的数字，横线和字母可能相同</span>
+<span class="line">求 ABC</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p><code>E___D*B=_B_EA</code> <code>E___D*A=CEB_B</code>，且 <code>E___D ≠ _B_EA</code>，<code>E___D ≠ CEB_B</code>（末位不同），故 <math><mrow><mi>B</mi><mo separator="true">,</mo></mrow><mrow><mi>C</mi><mo>≠</mo></mrow><mrow><mn>1</mn></mrow></math><br> 所以 <math><mrow><mi>B</mi><mo separator="true">,</mo></mrow><mrow><mi>C</mi></mrow></math> 中一定有一个数 <math><mrow><mo>≥</mo></mrow><mrow><mn>3</mn></mrow></math><br> 一个五位数乘上一个至少是三的数还是五位数，证明 <math><mrow><mi>E</mi><mo>∈</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>1,2,3</mn><mo form="postfix" stretchy="false">}</mo></mrow></math></p><details class="info"><summary><math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math> 时</summary><div class="det-in"><p>因为 <code>3XXXX * 4 &gt; 99999</code>，所以 <math><mrow><mo form="prefix" stretchy="false">{</mo><mi>B</mi><mo separator="true">,</mo><mi>C</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>2,3</mn><mo form="postfix" stretchy="false">}</mo></mrow></math><br> 但是 <math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math>，矛盾</p></div></details><details class="info"><summary><math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>2</mn></mrow></math> 时</summary><div class="det-in"><p><code>2XXXX * 5 &gt; 99999</code>,所以 <math><mrow><mi>B</mi><mo separator="true">,</mo></mrow><mrow><mi>C</mi><mo>∈</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>2,3,4</mn><mo form="postfix" stretchy="false">}</mo></mrow></math><br><math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>2</mn></mrow></math>，所以 <math><mrow><mi>B</mi><mo separator="true">,</mo></mrow><mrow><mi>C</mi><mo>∈</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>3,4</mn><mo form="postfix" stretchy="false">}</mo></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    2 _ _ _ D</span>
+<span class="line">  ×     A B C</span>
+<span class="line">-------------</span>
+<span class="line">  2 _ _ A _ _</span>
+<span class="line">  _ B _ 2 A</span>
+<span class="line">C 2 B _ B</span>
+<span class="line">-------------</span>
+<span class="line">C _ D D 2 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>2___D * A = C2B_B</code>，如果 <math><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math>，则 <math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math> 或 <math><mrow><mi>A</mi><mo>&gt;</mo></mrow><mrow><mn>1</mn></mrow></math> 都不行，矛盾<br><math><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>4</mn><mo separator="true">,</mo></mrow><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mn>3</mn></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    2 _ _ _ D</span>
+<span class="line">  ×     A 3 4</span>
+<span class="line">-------------</span>
+<span class="line">  2 _ _ A _ _</span>
+<span class="line">  _ 3 _ 2 A</span>
+<span class="line">4 2 3 _ 3</span>
+<span class="line">-------------</span>
+<span class="line">4 _ D D 2 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>2___D * A = 423_3</code>，<math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>2</mn></mrow></math>，但 <code>423_3</code> 是奇数，矛盾</p></div></details><details class="info"><summary><math><mrow><mi>E</mi><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math> 时</summary><div class="det-in"><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ D</span>
+<span class="line">  ×     A B C</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ A _ _</span>
+<span class="line">  _ B _ 1 A</span>
+<span class="line">C 1 B _ B</span>
+<span class="line">-------------</span>
+<span class="line">C _ D D 1 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><math><mrow><mi>C</mi><mo>≥</mo></mrow><mrow><mn>6</mn></mrow></math></p><details class="info"><summary>假设 <math><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>6</mn></mrow></math></summary><div class="det-in"><p><code>1___D * 6 &gt; 99999</code><br><code>1___D &gt; 16666</code><br><code>1___D * A = 61B_B</code><br><math><mi>A</mi></math> 无解</p></div></details><details class="info"><summary>假设 <math><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>7</mn></mrow></math></summary><div class="det-in"><p><code>1___D * 7 &gt; 99999</code><br><code>1___D &gt; 14285</code><br><code>1___D * A = 71B_B</code><br><math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>4</mn></mrow></math> 或 <math><mn>5</mn></math><br> 如果 <math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>5</mn></mrow></math>，又因为 <math><mrow><mi>B</mi><mo>≠</mo></mrow><mrow><mi>D</mi><mo separator="true">,</mo></mrow><mrow><mi>B</mi><mo>≠</mo></mrow><mrow><mn>0</mn></mrow></math>，所以 <math><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mn>5</mn><mo separator="true">,</mo></mrow><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>0</mn></mrow></math>，故 <math><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mn>0</mn></mrow></math>，矛盾<br> 故 <math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>4</mn></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ D</span>
+<span class="line">  ×     4 B 7</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ 4 _ _</span>
+<span class="line">  _ B _ 1 4 （1. 7*D个位是4，D=2）</span>
+<span class="line">7 1 B _ B （2. B=4D=8&gt;7，但是1___D*B是五位数，矛盾）</span>
+<span class="line">-------------</span>
+<span class="line">7 _ D D 1 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></details><details class="info"><summary>假设 <math><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>9</mn></mrow></math></summary><div class="det-in"><p><code>1___D * 9 &gt; 99999</code><br><code>1___D &gt; 11111</code><br><code>1___D * A = 91B_B</code><br><math><mrow><mi>A</mi><mo>∈</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>5,6,7,8</mn><mo form="postfix" stretchy="false">}</mo></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ D</span>
+<span class="line">  ×     A B 9</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ A _ _</span>
+<span class="line">  _ B _ 1 A</span>
+<span class="line">9 1 B _ B</span>
+<span class="line">-------------</span>
+<span class="line">9 _ D D 1 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>考虑尾数，可得 <math><mrow><mi>A</mi><mi>D</mi><mo>≡</mo></mrow><mrow><mi>B</mi><mo separator="true">,</mo></mrow><mrow><mi>B</mi><mi>D</mi><mo>≡</mo></mrow><mrow><mi>A</mi></mrow></math><br> 同时注意到 <math><mrow><mi>A</mi><mo>+</mo></mrow><mrow><mn>1</mn><mo>+</mo></mrow><mrow><mi>B</mi><mo>+</mo></mrow><mrow><msub><mi>r</mi><mtext>进位</mtext></msub><mo>≡</mo></mrow><mrow><mn>1</mn></mrow></math>，所以 <math><mrow><mi>A</mi><mo>+</mo></mrow><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mn>9</mn></mrow></math> 或 <math><mrow><mi>A</mi><mo>+</mo></mrow><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mn>10</mn></mrow></math></p><table><thead><tr><th style="text-align:center;">A</th><th style="text-align:center;">(B,D)</th></tr></thead><tbody><tr><td style="text-align:center;">5</td><td style="text-align:center;"><code>(5,?)</code> 重复，<code>(4,?)</code> 此时 <math><mrow><mi>A</mi><mi>D</mi></mrow></math> 位数不可能是 <code>4</code></td></tr><tr><td style="text-align:center;">6</td><td style="text-align:center;"><code>(4,4)</code> 重复，<code>(4,9)</code> <math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mi>C</mi></mrow></math> 重复， <code>(3,?)</code> <math><mrow><mi>B</mi><mo>≡</mo></mrow><mrow><mi>A</mi><mi>D</mi></mrow></math> 不可能是奇数</td></tr><tr><td style="text-align:center;">7</td><td style="text-align:center;"><code>(3,9)</code> <math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mi>C</mi></mrow></math>，<code>(2,?)</code> 奇偶性不对</td></tr><tr><td style="text-align:center;">8</td><td style="text-align:center;"><code>(1,?)</code> <math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mi>E</mi></mrow></math>，<code>(2,9)</code> <math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mi>C</mi></mrow></math>，<code>(2,4)</code> 唯一符合</td></tr></tbody></table><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ 4</span>
+<span class="line">  ×     8 2 9</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ 8 _ _</span>
+<span class="line">  _ 2 _ 1 8 // 1.此处 _+8=4，所以有进位</span>
+<span class="line">9 1 2 _ 2 // 2. 8+1+2=&gt;1，十位没有进位，矛盾</span>
+<span class="line">-------------</span>
+<span class="line">9 _ 4 4 1 4 _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></details><details class="info"><summary>假设 <math><mrow><mi>C</mi><mo>=</mo></mrow><mrow><mn>8</mn></mrow></math></summary><div class="det-in"><p><code>1___D * 8 &gt; 99999</code><br><code>1___D &gt; 12500</code><br><code>1___D * A = 81B_B</code><br><math><mrow><mi>A</mi><mo>∈</mo></mrow><mrow><mo form="prefix" stretchy="false">{</mo><mn>5,6</mn><mo form="postfix" stretchy="false">}</mo></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ D</span>
+<span class="line">  ×     A B 8</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ A _ _</span>
+<span class="line">  _ B _ 1 A</span>
+<span class="line">8 1 B _ B</span>
+<span class="line">-------------</span>
+<span class="line">8 _ D D 1 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果 <math><mrow><mi>A</mi><mo>=</mo></mrow><mrow><mn>5</mn></mrow></math>，<math><mrow><mi>B</mi><mo>≠</mo></mrow><mrow><mi>A</mi></mrow></math>，<math><mrow><mi>A</mi><mi>D</mi><mo>≡</mo></mrow><mrow><mi>B</mi></mrow></math>，<math><mrow><mi>B</mi><mo>=</mo></mrow><mrow><mn>0</mn></mrow></math>，加法百位对不上</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ D</span>
+<span class="line">  ×     6 B 8</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ 6 _ _</span>
+<span class="line">  _ B _ 1 6</span>
+<span class="line">8 1 B _ B</span>
+<span class="line">-------------</span>
+<span class="line">8 _ D D 1 D _</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>依照前文，<math><mrow><mi>A</mi><msup><mi>D</mi><mn class="tml-sml-pad">2</mn></msup><mo>≡</mo></mrow><mrow><mi>A</mi></mrow></math>，即 <math><mrow><mn>6</mn><msup><mi>D</mi><mn class="tml-sml-pad">2</mn></msup><mo>≡</mo></mrow><mrow><mn>6</mn></mrow></math>,<math><mrow><msup><mi>D</mi><mn class="tml-sml-pad">2</mn></msup><mo>≡</mo></mrow><mrow><mn>6</mn><mtext> or </mtext><mn>1</mn></mrow></math>，<math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>1,4,6,9</mn></mrow></math>,除去重复，<math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>4,9</mn></mrow></math>，无论如何 <math><mrow><mi>B</mi><mo>≡</mo></mrow><mrow><mi>A</mi><mi>D</mi><mo>=</mo></mrow><mrow><mn>4</mn></mrow></math>，故 <math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>9</mn></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">    1 _ _ _ 9</span>
+<span class="line">  ×     6 4 8</span>
+<span class="line">-------------</span>
+<span class="line">  1 _ _ 6 3 2</span>
+<span class="line">  _ 4 _ 1 6</span>
+<span class="line">8 1 4 _ 4 // 枚举可得第一行为13569/13574/13579,只有13579*8末两位对的上</span>
+<span class="line">-------------</span>
+<span class="line">8 _ 9 9 1 9 2</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></details></div></details></div></details><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">9.</span>
+<span class="line">            D _ _ D _ B C</span>
+<span class="line">       ___________________</span>
+<span class="line">A B C / _ _ _ _ _ _ _ _ _</span>
+<span class="line">        _ _ _           |</span>
+<span class="line">        -------         |</span>
+<span class="line">        D _ _ C         |</span>
+<span class="line">        D _ _ A         |</span>
+<span class="line">        -----------     |</span>
+<span class="line">            D _ A _     |</span>
+<span class="line">              _ _ _     |</span>
+<span class="line">            ---------   |</span>
+<span class="line">              A D B B   |</span>
+<span class="line">              _ C _ _   |</span>
+<span class="line">              --------- |</span>
+<span class="line">                _ D _ C |</span>
+<span class="line">                _ _ _ _ |</span>
+<span class="line">                ---------</span>
+<span class="line">                  _ _ A _</span>
+<span class="line">                  _ D C B</span>
+<span class="line">                  -------</span>
+<span class="line">                    D _ A</span>
+<span class="line">不同的字母代表不同的数字，横线和字母可能相同</span>
+<span class="line">求 ABC</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">D _ A _     |</span>
+<span class="line">  _ _ _     |</span>
+<span class="line">---------   |</span>
+<span class="line">  A D B B   |</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>四位数减三位数等于三位数，<math><mrow><mi>D</mi><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">            1 _ 0 1 _ B C</span>
+<span class="line">       ___________________</span>
+<span class="line">A B C / _ _ _ C _ _ B C _ // A ≠ 0. 不同字母不同，A ≠ 1</span>
+<span class="line">        A B C           |</span>
+<span class="line">        -------         |</span>
+<span class="line">        1 _ _ C         |</span>
+<span class="line">        1 _ _ A         |</span>
+<span class="line">        -----------     |</span>
+<span class="line">            1 _ A _     |</span>
+<span class="line">              A B C     |</span>
+<span class="line">            ---------   |</span>
+<span class="line">              A 1 B B   | // B+1 = A 或 B+2 = A mod 10</span>
+<span class="line">              _ C _ _   |</span>
+<span class="line">              --------- |</span>
+<span class="line">                _ 1 _ C |</span>
+<span class="line">                _ _ _ _ |</span>
+<span class="line">                ---------</span>
+<span class="line">                  _ _ A _</span>
+<span class="line">                  _ 1 C B // C^2 = B mod 10</span>
+<span class="line">                  -------</span>
+<span class="line">                    1 _ A</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>很显然 <math><mrow><mi>C</mi><mo>≢</mo></mrow><mrow><mi>B</mi><mo>≡</mo></mrow><mrow><msup><mi>C</mi><mn class="tml-med-pad">2</mn></msup></mrow></math><br><math><mrow><mi>C</mi><mo>≠</mo></mrow><mrow><mn>0,1,5,6</mn></mrow></math></p><table><thead><tr><th style="text-align:center;"><math><mi>C</mi></math></th><th style="text-align:center;"><math><mi>B</mi></math></th><th style="text-align:center;"><math><mi>A</mi></math></th></tr></thead><tbody><tr><td style="text-align:center;"><math><mn>2</mn></math></td><td style="text-align:center;"><math><mn>4</mn></math></td><td style="text-align:center;"><math><mn>5,6</mn></math></td></tr><tr><td style="text-align:center;"><math><mn>3</mn></math></td><td style="text-align:center;"><math><mn>9</mn></math></td><td style="text-align:center;"><math><mn>0,1</mn></math>(舍)</td></tr><tr><td style="text-align:center;"><math><mn>4</mn></math></td><td style="text-align:center;"><math><mn>6</mn></math></td><td style="text-align:center;"><math><mn>7,8</mn></math></td></tr><tr><td style="text-align:center;"><math><mn>7</mn></math></td><td style="text-align:center;"><math><mn>9</mn></math></td><td style="text-align:center;"><math><mn>0,1</mn></math>(舍)</td></tr><tr><td style="text-align:center;"><math><mn>8</mn></math></td><td style="text-align:center;"><math><mn>4</mn></math></td><td style="text-align:center;"><math><mn>5,6</mn></math></td></tr><tr><td style="text-align:center;"><math><mn>9</mn></math></td><td style="text-align:center;"><math><mn>1</mn></math></td><td style="text-align:center;"><math><mn>2,3</mn></math></td></tr></tbody></table><p>注意到 <code>ABC*C</code> 结尾是 <code>1CB</code><br><code>542*2=1084</code><br><code>642*2=1284</code><br><code>764*4=3056</code><br><code>864*4=3456</code><br><code>548*8=4384</code><br><code>648*8=5184</code><br><code>219*9=1971</code><br><code>319*9=2871</code><br> 只有 <code>648</code> 符合</p></div></details><ol start="10"><li>一个数 <math><mi>x</mi></math>，满足以 <math><mi>x</mi></math> 为首项的Goodstein数列的第 <math><mi>x</mi></math> 项为 <math><mrow><msup><mi>k</mi><mrow><msup><mi>k</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>1</mn></mrow></msup><mo>+</mo></mrow><mrow><msup><mi>k</mi><mrow><msup><mi>k</mi><mi>k</mi></msup><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>+</mo></mrow><mrow><msup><mi>k</mi><mi>k</mi></msup><mo>×</mo></mrow><mrow><mn>2</mn><mo>+</mo></mrow><mrow><mn>432397</mn></mrow></math>，其中 <math><mrow><mi>k</mi><mo>=</mo></mrow><mrow><mi>x</mi><mo>+</mo></mrow><mrow><mn>1</mn></mrow></math>，则 <math><mi>x</mi></math> 为</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>注意可得</p></div></details><ol start="11"><li>一个数 <math><mi>x</mi></math> 的奇数因子和为 <math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo></mrow></math>，则 <math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mi>n</mi><mo form="postfix" stretchy="false">)</mo></mrow></math> 中最先出现的三个连续非一数组成的三位数为</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>1</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math><br><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>2</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math><br><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>3</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>4</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>1</mn></mrow></math><br><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>5</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>6</mn></mrow></math><br><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>6</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>4</mn></mrow></math><br><math><mrow><mi>σ</mi><mo form="prefix" stretchy="false">(</mo><mn>7</mn><mo form="postfix" stretchy="false">)</mo><mo>=</mo></mrow><mrow><mn>8</mn></mrow></math></p></div></details><ol start="12"><li><math><mrow><msup><mi>e</mi><mrow class="tml-sml-pad"><mn>2</mn><mi>π</mi></mrow></msup><mo>+</mo></mrow><mrow><mn>2</mn><msup><mi>e</mi><mrow class="tml-sml-pad"><mi>π</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo></mrow><mrow><msup><mi>e</mi><mi class="tml-sml-pad">e</mi></msup><mo>+</mo></mrow><mrow><mi>e</mi></mrow></math> 整数部分为</li></ol><details class="info"><summary>答案</summary><div class="det-in"><p><math><mn>648</mn></math></p></div></details><details class="info"><summary>解析</summary><div class="det-in"><p>略</p></div></details></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><!----><!----></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/slog/assets/app-okPrtdaK.js" defer></script>
+  </body>
+</html>
