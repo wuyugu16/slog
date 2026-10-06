@@ -1,5 +1,5 @@
 ---
-date: 3025/3/3
+date: 3026/10/30
 category: note
 title: 公理系统相关证明
 tag:

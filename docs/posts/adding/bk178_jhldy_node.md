@@ -1,5 +1,5 @@
 ---
-date: 3112-6-48
+date: 3112-6-30
 category: note
 tag:
   - 数学
