@@ -11,11 +11,6 @@ main {
 	tr {
 		background-color: #f8f8f8 !important;
 	}
-	.hljs {
-		padding : 5px;
-		margin : 5px;
-		font-family : "Consolas", "Courier New", monospace;
-	}
 	a {
 		transition: color 0.5s;
 		text-decoration: none !important;
@@ -26,37 +21,6 @@ main {
 	}
 	p {
 		margin : 5px;
-	}
-	details {
-		transition: padding 0.5s;
-		margin : 5px;
-		padding-right : 5px;
-	}
-	details[open] {
-		border-left: 5px solid;
-		padding : 0px 5px 5px 0px;
-	}
-	details[open].warn {
-		border-color : #fcc
-	}
-	details[open].info {
-		border-color : #ccf
-	}
-	details[open].prove {
-		border-color : #cfc
-	}
-	summary {
-		cursor: pointer;
-		padding : 3px;
-	}
-	details.warn>summary {
-		background-color: #fcc;
-	}
-	details.info>summary {
-		background-color: #ccf;
-	}
-	details.prove>summary {
-		background-color: #cfc;
 	}
 	.det-in{
 		margin : 5px;

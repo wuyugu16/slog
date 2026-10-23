@@ -41,10 +41,8 @@ defineProps({
 </template>
 
 <style lang="scss">
-@use "@vuepress/theme-default/styles/mixins";
 
 .article-wrapper {
-	@include mixins.content-wrapper;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
