@@ -1,5 +1,5 @@
 <script setup>
-import { useBlogCategory } from '@vuepress/plugin-blog/client'
+import { useBlogCategory } from '../plugins/ownBlogClient.js'
 import { Layout } from 'vuepress-theme-hope/client'
 import { RouteLink, useRoutePath } from 'vuepress/client'
 import ArticleList from '../components/ArticleList.vue'
@@ -10,31 +10,31 @@ const routePath = useRoutePath()
 
 <template>
   <Layout>
-    <main class="page">
-      <div class="tag-wrapper">
-        <RouteLink
-          v-for="({ items, path }, name) in tagMap.map"
-          :key="name"
-          :to="path"
-          :active="routePath === path"
-          class="tag"
-        >
-          {{ name }}
-          <span class="tag-num">
-            {{ items.length }}
-          </span>
-        </RouteLink>
-      </div>
-
-      <ArticleList :items="tagMap.currentItems ?? []" />
-    </main>
+    <template #content>
+      <main class="page">
+        <div class="tag-wrapper">
+          <RouteLink
+            v-for="({ items, path }, name) in tagMap.map"
+            :key="name"
+            :to="path"
+            :active="decodeURIComponent(routePath) === path"
+            class="tag"
+          >
+            {{ name }}
+            <span class="tag-num">
+              {{ items.length }}
+            </span>
+          </RouteLink>
+        </div>
+        <ArticleList :items="tagMap.currentItems ?? []" />
+      </main>
+    </template>
   </Layout>
 </template>
 
 <style lang="scss">
 
 .tag-wrapper {
-
   padding-bottom: 0 !important;
   font-size: 0.875em;
 

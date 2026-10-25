@@ -1,10 +1,8 @@
 ---
 home: true
-title: Home
-heroText: null
-heroImage: null
-tagline: null
-tagline:: null
+hero: false
+title: 首页
+heroText: ""
 ---
 
 hello!
