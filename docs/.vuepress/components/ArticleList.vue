@@ -1,10 +1,26 @@
 <script setup>
-defineProps({
+const { items } = defineProps({
 	items: {
 		type: Array,
 		required: true,
 	},
 });
+const sorter = (pageA, pageB) => {
+	if (pageA.info.sticky && pageB.info.sticky)
+		return pageB.info.sticky - pageA.info.sticky;
+	if (pageA.info.sticky && !pageB.info.sticky)
+		return -1;
+	if (!pageA.info.sticky && pageB.info.sticky)
+		return 1;
+	if (!pageB.info.date) return 1;
+	if (!pageA.info.date) return -1;
+	return (
+		new Date(pageB.info.date).getTime() -
+		new Date(pageA.info.date).getTime()
+	);
+};
+items.sort(sorter);
+console.log(items)
 </script>
 
 <template>
@@ -20,6 +36,7 @@ defineProps({
 			<header class="title">
 				{{ info.title }}
 			</header>
+			<span v-if="info.sticky" class="pin" aria-label="置顶" title="置顶">📌</span>
 
 			<hr />
 
@@ -41,10 +58,8 @@ defineProps({
 </template>
 
 <style lang="scss">
-@use "@vuepress/theme-default/styles/mixins";
 
 .article-wrapper {
-	@include mixins.content-wrapper;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -52,6 +67,7 @@ defineProps({
 }
 
 .article {
+  	position: relative;
 	box-sizing: border-box;
 	padding: 1rem 1.25rem;
 	border: 1px solid var(--vp-c-border);
@@ -72,9 +88,15 @@ defineProps({
 
 	.article-info {
 		> span {
-		margin-inline-end: 0.5em;
-		line-height: 1.8;
+			margin-inline-end: 0.5em;
+			line-height: 1.8;
 		}
+	}
+	.pin {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.75rem;
+		font-size: 0.85rem;
 	}
 }
 </style>

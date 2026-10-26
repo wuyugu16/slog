@@ -1,5 +1,5 @@
 ---
-date: 2026-6-10
+date: 2026-06-10
 category: passage
 title: 金句合集
 tag:

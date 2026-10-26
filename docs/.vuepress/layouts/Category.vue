@@ -1,6 +1,6 @@
 <script setup>
-import { useBlogCategory } from '@vuepress/plugin-blog/client'
-import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
+import { useBlogCategory } from '../plugins/ownBlogClient.js'
+import { Layout } from 'vuepress-theme-hope/client'
 import { RouteLink, useRoutePath } from 'vuepress/client'
 import ArticleList from '../components/ArticleList.vue'
 
@@ -9,8 +9,8 @@ const routePath = useRoutePath()
 </script>
 
 <template>
-  <ParentLayout>
-    <template #page>
+  <Layout>
+    <template #content>
       <main class="page">
         <div class="category-wrapper">
           <RouteLink
@@ -21,24 +21,18 @@ const routePath = useRoutePath()
             class="category"
           >
             {{ name }}
-            <span class="category-num">
-              {{ items.length }}
-            </span>
+            <span class="category-num">{{ items.length }}</span>
           </RouteLink>
         </div>
-
         <ArticleList :items="categoryMap.currentItems ?? []" />
       </main>
     </template>
-  </ParentLayout>
+  </Layout>
 </template>
 
 <style lang="scss">
-@use '@vuepress/theme-default/styles/mixins';
 
 .category-wrapper {
-  @include mixins.content-wrapper;
-
   padding-bottom: 0 !important;
   font-size: 0.875em;
 

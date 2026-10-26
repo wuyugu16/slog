@@ -1,5 +1,5 @@
 ---
-date: 2026-6-29
+date: 2026-06-29
 category: note
 title: Googology笔记
 tag:
@@ -43,7 +43,7 @@ $\varphi(1@(1,0),1@0)=\sup\{\varphi(1@(1,0))+1,\varphi(1@({\color{RED}\varphi(1@
 $BHO=\sup\{\varphi(1,0),\varphi(1@(1,0)),\varphi(1@(1@(1,0))),...\}$
 ### 弱Veblen函数
 $\phi(\#,\alpha+1)=\phi(\#,\alpha)+1$
-:::info[分析]
+::: details 分析]
 $\phi(1,0)=\omega=\varphi(1)$
 $\phi(1,\phi(1,0))=\omega2=\varphi(1)2$
 $\phi(1,\phi(1,\phi(1,0)))=\omega3=\varphi(1)3$

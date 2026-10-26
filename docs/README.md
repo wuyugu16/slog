@@ -1,10 +1,8 @@
 ---
 home: true
-title: Home
-heroText: null
-heroImage: null
-tagline: null
-tagline:: null
+hero: false
+title: 首页
+heroText: ""
 ---
 
 hello!
@@ -21,9 +19,9 @@ hello!
 - 做
   - *做小烧的电路（c++GUI）
   - 做图片博物馆
-  - *做能断点续传的git
   - 做48talkPPT
   - 做希望杯
+  - bl友链
   - *用程序求出password game最优解
   - 看6star英语笔记
   - 如果只允许成对字符/三连字符/要求代码回文，js能干什么

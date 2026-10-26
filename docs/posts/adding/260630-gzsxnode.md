@@ -1,5 +1,5 @@
 ---
-date: 2026-6-30
+date: 2026-06-30
 category: note
 title: 高中数学笔记
 tag:

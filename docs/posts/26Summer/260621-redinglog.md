@@ -1,5 +1,5 @@
 ---
-date: 2026-6-19
+date: 2026-06-19
 category: fun
 title: Reading log
 ---
