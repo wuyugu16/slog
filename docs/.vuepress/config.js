@@ -17,6 +17,7 @@ const __dirname = getDirname(import.meta.url)
 export default defineUserConfig({
 	lang: "zh-CN",
 	title: "wuyugu",
+	base: "/slog/",
 	theme: hopeTheme({
 		markdown: {
 			math: {
